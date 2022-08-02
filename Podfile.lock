@@ -1,0 +1,140 @@
+PODS:
+  - Alamofire (5.6.2)
+  - CryptoSwift (1.5.1)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManagerSwift (6.5.10)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - ReachabilitySwift (5.0.0)
+  - RTRootNavigationController (0.8.0):
+    - RTRootNavigationController/Core (= 0.8.0)
+  - RTRootNavigationController/Core (0.8.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxKeyboard (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - SHFullscreenPopGestureSwift (1.2.1)
+  - SnapKit (5.6.0)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+  - SwiftyFitsize (1.4.1)
+  - SwiftyUserDefaults (5.3.0)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - CryptoSwift (= 1.5.1)
+  - HandyJSON (= 5.0.2)
+  - IQKeyboardManagerSwift (= 6.5.10)
+  - MBProgressHUD (= 1.2.0)
+  - MJRefresh (= 3.7.5)
+  - Moya (= 15.0)
+  - NVActivityIndicatorView (= 5.1.1)
+  - R.swift (= 6.1.0)
+  - ReachabilitySwift (= 5.0)
+  - RTRootNavigationController (~> 0.8.0)
+  - RxCocoa (~> 6.5.0)
+  - RxKeyboard (~> 2.0.0)
+  - RxSwift (~> 6.5.0)
+  - SDWebImage (= 5.13.2)
+  - SHFullscreenPopGestureSwift (= 1.2.1)
+  - SnapKit (= 5.6.0)
+  - SwifterSwift (= 5.2.0)
+  - SwiftyFitsize (= 1.4.1)
+  - SwiftyUserDefaults (~> 5.3.0)
+  - Then (= 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - NVActivityIndicatorView
+    - R.swift
+    - R.swift.Library
+    - ReachabilitySwift
+    - RTRootNavigationController
+    - RxCocoa
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SHFullscreenPopGestureSwift
+    - SnapKit
+    - SwifterSwift
+    - SwiftyFitsize
+    - SwiftyUserDefaults
+    - Then
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SHFullscreenPopGestureSwift: 96c20749695c8fbf14a29feb5ece469d7a909a41
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftyFitsize: 85461aa4615cb7738e1b7842f5181ffbc951a72d
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: a061e76f4c1ed00a5ceedeb91dac623120a3bd2e
+
+COCOAPODS: 1.11.3

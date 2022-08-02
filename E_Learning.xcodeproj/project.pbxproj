@@ -12,6 +12,7 @@
 		0044C7192898CB3E006D5B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044C7182898CB3E006D5B1F /* ViewController.swift */; };
 		0044C71C2898CB3E006D5B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71A2898CB3E006D5B1F /* Main.storyboard */; };
 		0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */; };
+		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		0044C7182898CB3E006D5B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0044C71B2898CB3E006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0044C7202898CB3F006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
+		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
+		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
+		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				0044C7132898CB3E006D5B1F /* E_Learning */,
 				0044C7122898CB3E006D5B1F /* Products */,
+				1102D3B31C69B05D923657BE /* Pods */,
+				9D76E551EF0818609702CBF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +72,30 @@
 			children = (
 				0044C7142898CB3E006D5B1F /* AppDelegate.swift */,
 				0044C7182898CB3E006D5B1F /* ViewController.swift */,
+				00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */,
 				0044C71A2898CB3E006D5B1F /* Main.storyboard */,
 				0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */,
 				001F43792898CDA200324FDB /* Info.plist */,
 				001F437B2898CDB900324FDB /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1102D3B31C69B05D923657BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */,
+				0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D76E551EF0818609702CBF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0044C7252898CB3F006D5B1F /* Build configuration list for PBXNativeTarget "E_Learning" */;
 			buildPhases = (
+				2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */,
 				0044C70D2898CB3E006D5B1F /* Sources */,
 				0044C70E2898CB3E006D5B1F /* Frameworks */,
 				0044C70F2898CB3E006D5B1F /* Resources */,
+				AA3F401E8BF5126B4AA41A5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -104,6 +132,7 @@
 				TargetAttributes = {
 					0044C7102898CB3E006D5B1F = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -137,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E_Learning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3F401E8BF5126B4AA41A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E_Learning/Pods-E_Learning-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E_Learning/Pods-E_Learning-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E_Learning/Pods-E_Learning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0044C70D2898CB3E006D5B1F /* Sources */ = {
@@ -286,9 +357,11 @@
 		};
 		0044C7262898CB3F006D5B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,9 +369,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +381,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eLearning.com.E-Learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "E_Learning/Supporting Files/E_Learning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -314,9 +390,11 @@
 		};
 		0044C7272898CB3F006D5B1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,9 +402,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eLearning.com.E-Learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "E_Learning/Supporting Files/E_Learning-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
