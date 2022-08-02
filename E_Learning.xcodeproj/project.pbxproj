@@ -12,6 +12,7 @@
 		0044C7192898CB3E006D5B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044C7182898CB3E006D5B1F /* ViewController.swift */; };
 		0044C71C2898CB3E006D5B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71A2898CB3E006D5B1F /* Main.storyboard */; };
 		0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */; };
+		00A64AAE289916A4008F970F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A64AAD289916A4008F970F /* R.generated.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		0044C71B2898CB3E006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0044C7202898CB3F006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
+		00A64AAD289916A4008F970F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 			children = (
 				0044C7142898CB3E006D5B1F /* AppDelegate.swift */,
 				0044C7182898CB3E006D5B1F /* ViewController.swift */,
+				00A64AAD289916A4008F970F /* R.generated.swift */,
 				00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */,
 				0044C71A2898CB3E006D5B1F /* Main.storyboard */,
 				0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */,
@@ -106,6 +109,7 @@
 			buildConfigurationList = 0044C7252898CB3F006D5B1F /* Build configuration list for PBXNativeTarget "E_Learning" */;
 			buildPhases = (
 				2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */,
+				00A64AAC289914A1008F970F /* R.swift */,
 				0044C70D2898CB3E006D5B1F /* Sources */,
 				0044C70E2898CB3E006D5B1F /* Frameworks */,
 				0044C70F2898CB3E006D5B1F /* Resources */,
@@ -168,6 +172,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00A64AAC289914A1008F970F /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/E_Learning/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/E_Learning/Supporting Files/R.generated.swift\"\n";
+		};
 		2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +241,7 @@
 			files = (
 				0044C7192898CB3E006D5B1F /* ViewController.swift in Sources */,
 				0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */,
+				00A64AAE289916A4008F970F /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +398,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +431,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
