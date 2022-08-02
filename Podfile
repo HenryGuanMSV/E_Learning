@@ -49,5 +49,5 @@ target 'E_Learning' do
   # HUD
   pod 'MBProgressHUD', '1.2.0'
   # 页面跳转
-    pod "RTRootNavigationController", '~> 0.8.0'
+  pod "RTRootNavigationController", '~> 0.8.0'
 end
