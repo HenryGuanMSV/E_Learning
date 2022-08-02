@@ -53,11 +53,10 @@ playground.xcworkspace
 ### Xcode Patch ###
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddat
+!*.xcodeproj/xcshareddata
 !*/xcuserdata/admin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlista/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
-
 
 # End of https://www.gitignore.io/api/xcode
 
@@ -74,7 +73,7 @@ Pods/
 
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+*.xcworkspace
 
 # Carthage
 #
