@@ -19,8 +19,8 @@ let MATCHING_URL = "\\bhttps?://[a-zA-Z0-9\\-.]+(?::(\\d+))?(?:(?:/[a-zA-Z0-9\\-
 let MATCHING_PURE_NUMBER = "^([0-9])\\d{4}$"
 
 /** 验证 */
-class WJCheckUtil {
-    static let shared = WJCheckUtil()
+class ELCheckUtil {
+    static let shared = ELCheckUtil()
     
     private init(){}
     

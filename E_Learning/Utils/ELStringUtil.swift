@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WJStringUtil: NSObject {
+class ELStringUtil: NSObject {
     
     /** 获取当前时间戳 */
     static func currentTimeStr() -> String {
@@ -265,7 +265,7 @@ class WJStringUtil: NSObject {
         }
          
         let endOfYear = calendar.date(byAdding: components,
-                                      to: WJStringUtil.startOfMonth(year: year, month:month))!
+                                      to: ELStringUtil.startOfMonth(year: year, month:month))!
         return endOfYear
     }
     
