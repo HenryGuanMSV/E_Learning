@@ -1,8 +1,8 @@
 //
 //  UINavigationItem.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/19.
+//  Created by sin on 2021/10/19.
 //
 
 import UIKit

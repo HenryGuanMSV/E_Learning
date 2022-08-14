@@ -33,13 +33,16 @@ target 'E_Learning' do
   # 加载动画
   pod 'NVActivityIndicatorView', '5.1.1'
   #规范资源文件
-  pod 'R.swift', '6.1.0'
+  #pod 'R.swift', '6.1.0'
   # Swift 工具
   pod 'SwifterSwift', '5.2.0'
   #  数据持久化
   pod 'SwiftyUserDefaults', '~> 5.3.0'
   #  加密
   pod 'CryptoSwift', '1.5.1'
+  #打印log
+  pod 'XCGLogger', '7.0.1'
+  
   
   # oc的库
   # 图片缓存库

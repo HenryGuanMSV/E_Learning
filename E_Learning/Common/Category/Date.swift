@@ -1,8 +1,8 @@
 //
 //  Date.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/21.
+//  Created by sin on 2021/10/21.
 //
 
 import UIKit

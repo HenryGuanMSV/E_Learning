@@ -1,8 +1,8 @@
 //
 //  UIView.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by weiju on 2022/5/17.
+//  Created by sin on 2022/5/17.
 //
 
 import UIKit

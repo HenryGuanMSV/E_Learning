@@ -1,12 +1,11 @@
 //
 //  UILabel.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/12/14.
+//  Created by sin on 2021/12/14.
 //
 
 import UIKit
-import SwifterSwift
 
 /** 字体图标样式 */
 enum WJFontsIcon : String {

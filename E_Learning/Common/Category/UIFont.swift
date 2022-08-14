@@ -1,6 +1,6 @@
 //
 //  UIFont.swift
-//  WedoTalk
+//  E_Learning
 //
 //  Created by 觅蓝科技 on 2022/4/2.
 //

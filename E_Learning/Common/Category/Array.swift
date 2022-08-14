@@ -1,8 +1,8 @@
 //
 //  Array.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by weiju on 2022/4/29.
+//  Created by sin on 2022/4/29.
 //
 
 import Foundation

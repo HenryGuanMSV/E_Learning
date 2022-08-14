@@ -1,8 +1,8 @@
 //
 //  String.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/12.
+//  Created by sin on 2021/10/12.
 //
 
 import Foundation

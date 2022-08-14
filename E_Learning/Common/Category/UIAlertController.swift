@@ -1,6 +1,6 @@
 //
 //  UIAlertController.swift
-//  WedoTalk
+//  E_Learning
 //
 //  Created by luigi on 2022/6/17.
 //

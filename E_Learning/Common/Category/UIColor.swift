@@ -1,8 +1,8 @@
 //
 //  UIColor.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/9.
+//  Created by sin on 2021/10/9.
 //
 
 import UIKit
@@ -154,6 +154,34 @@ extension UIColor {
         }
         
         return light
+    }
+    
+    /** 主色 - xxx */
+    class var mainColor : UIColor {
+        return self.colorLightDark(light: UIColor.white, dark: UIColor.colorWithString("#282828"))
+    }
+    
+    /** 白色 - #FFFFFF */
+    class var whiteColor : UIColor {
+        return UIColor.colorWithString("#FFFFFF")
+    }
+    
+    /** tabbar背景色 - #FFFFFF */
+    class var tabbarBGColor : UIColor {
+        return UIColor.colorWithString("#FFFFFF")
+    }
+
+    /** tabbar选中色 - #FFFFFF */
+    class var tabbarSelectColor : UIColor {
+        return UIColor.colorWithString("#007CC3")
+    }
+    
+
+    class var naviColor : UIColor {
+        let config = NaviBarConfig()
+        let naviColorLight = UIColor.bm_colorGradient(size: config.size, colors: config.colors, points: config.points, locations: config.locations)
+        let naviColorDark = UIColor.bm_colorGradient(size: config.size, colors: config.darkColors, points: config.points, locations: config.locations)
+        return self.colorLightDark(light: naviColorLight, dark: naviColorDark)
     }
 }
 

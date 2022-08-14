@@ -55,6 +55,13 @@ func scaleNum(_ w:CGFloat) -> CGFloat {
     return num
 }
 
+/** 文本提示 */
+let NETWORK_ANOMALIES = "网络异常，请重新请求"
+
+/** tabbar标题 */
+let HOME_TABBAR_NAME = "Home"
+let COURSE_TABBAR_NAME = "Course"
+let MY_TABBAR_NAME = "My"
 
 /** 网络环境 */
 #if DEBUG

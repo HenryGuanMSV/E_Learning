@@ -1,8 +1,8 @@
 //
 //  UITableView.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/20.
+//  Created by sin on 2021/10/20.
 //
 
 import UIKit

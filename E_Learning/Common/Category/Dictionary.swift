@@ -1,8 +1,8 @@
 //
 //  Dictionary.swift
-//  WedoTalk
+//  E_Learning
 //
-//  Created by bruce on 2021/10/13.
+//  Created by sin on 2021/10/13.
 //
 
 import Foundation
