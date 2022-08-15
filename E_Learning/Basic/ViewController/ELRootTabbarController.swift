@@ -87,5 +87,6 @@ extension WrappingNavigationController {
     }
 }
 extension ELRootTabbarController: WrappingNavigationController {}
+extension ELHomePageViewController: WrappingNavigationController {}
 extension ELCourseViewController: WrappingNavigationController {}
 extension ELMyViewController: WrappingNavigationController {}

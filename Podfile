@@ -33,7 +33,7 @@ target 'E_Learning' do
   # 加载动画
   pod 'NVActivityIndicatorView', '5.1.1'
   #规范资源文件
-  #pod 'R.swift', '6.1.0'
+  pod 'R.swift', '6.1.0'
   # Swift 工具
   pod 'SwifterSwift', '5.2.0'
   #  数据持久化

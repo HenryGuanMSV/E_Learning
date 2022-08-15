@@ -44,7 +44,6 @@
 		0044623228A89F5E00AED895 /* ELCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044623128A89F5E00AED895 /* ELCourseViewController.swift */; };
 		0044623428A89F8C00AED895 /* ELMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044623328A89F8C00AED895 /* ELMyViewController.swift */; };
 		0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044C7142898CB3E006D5B1F /* AppDelegate.swift */; };
-		0044C71C2898CB3E006D5B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71A2898CB3E006D5B1F /* Main.storyboard */; };
 		0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */; };
 		0059CC7828A614B0008DC1F1 /* ELBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC7728A614B0008DC1F1 /* ELBasicViewController.swift */; };
 		0059CC7B28A6189D008DC1F1 /* ELBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC7A28A6189D008DC1F1 /* ELBasicView.swift */; };
@@ -53,6 +52,8 @@
 		0059CC8228A61FE3008DC1F1 /* ELRootTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC8128A61FE3008DC1F1 /* ELRootTabbarController.swift */; };
 		0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC8628A622EF008DC1F1 /* ELCheckNetwork.swift */; };
 		0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC8828A623EA008DC1F1 /* ELProgressHUD.swift */; };
+		0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AC28A9ED25005874D8 /* R.generated.swift */; };
+		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +97,6 @@
 		0044623328A89F8C00AED895 /* ELMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELMyViewController.swift; sourceTree = "<group>"; };
 		0044C7112898CB3E006D5B1F /* E_Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0044C7142898CB3E006D5B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0044C71B2898CB3E006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0044C7202898CB3F006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0059CC7728A614B0008DC1F1 /* ELBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBasicViewController.swift; sourceTree = "<group>"; };
 		0059CC7A28A6189D008DC1F1 /* ELBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBasicView.swift; sourceTree = "<group>"; };
@@ -105,6 +105,8 @@
 		0059CC8128A61FE3008DC1F1 /* ELRootTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELRootTabbarController.swift; sourceTree = "<group>"; };
 		0059CC8628A622EF008DC1F1 /* ELCheckNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELCheckNetwork.swift; sourceTree = "<group>"; };
 		0059CC8828A623EA008DC1F1 /* ELProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELProgressHUD.swift; sourceTree = "<group>"; };
+		0063F1AC28A9ED25005874D8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator+Home.swift"; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,10 +380,10 @@
 		0044C7282898CD63006D5B1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0063F1AC28A9ED25005874D8 /* R.generated.swift */,
 				000BD547289A1EFA00B9100E /* Global.swift */,
 				0044C7142898CB3E006D5B1F /* AppDelegate.swift */,
 				00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */,
-				0044C71A2898CB3E006D5B1F /* Main.storyboard */,
 				0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */,
 				001F43792898CDA200324FDB /* Info.plist */,
 				001F437B2898CDB900324FDB /* Assets.xcassets */,
@@ -422,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				0059CC7F28A61E8D008DC1F1 /* Navigator.swift */,
+				0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			buildConfigurationList = 0044C7252898CB3F006D5B1F /* Build configuration list for PBXNativeTarget "E_Learning" */;
 			buildPhases = (
 				2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */,
+				007E43D328A9E31A0019D329 /* R.swift */,
 				0044C70D2898CB3E006D5B1F /* Sources */,
 				0044C70E2898CB3E006D5B1F /* Frameworks */,
 				0044C70F2898CB3E006D5B1F /* Resources */,
@@ -524,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */,
-				0044C71C2898CB3E006D5B1F /* Main.storyboard in Resources */,
 				001F437C2898CDB900324FDB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +535,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		007E43D328A9E31A0019D329 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/E_Learning/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/E_Learning/Supporting Files/R.generated.swift\"\n";
+		};
 		2784CF20A97EC826769EA414 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,10 +628,12 @@
 				000BD546289A1D0B00B9100E /* UIAlertController.swift in Sources */,
 				000BD53A289A1D0B00B9100E /* Array.swift in Sources */,
 				000BD561289A229100B9100E /* ELNotificationKeyUtil.swift in Sources */,
+				0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */,
 				000BD55C289A229100B9100E /* UIScrollView+RxSwift.swift in Sources */,
 				000BD545289A1D0B00B9100E /* UILabel.swift in Sources */,
 				0059CC7828A614B0008DC1F1 /* ELBasicViewController.swift in Sources */,
 				000BD53E289A1D0B00B9100E /* Dictionary.swift in Sources */,
+				0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */,
 				000BD538289A1D0B00B9100E /* Date.swift in Sources */,
 				000BD544289A1D0B00B9100E /* UIFont.swift in Sources */,
 				001F805A28A77A3200F8C6EF /* ELAPIClient.swift in Sources */,
@@ -627,14 +652,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0044C71A2898CB3E006D5B1F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0044C71B2898CB3E006D5B1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -769,11 +786,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E_Learning/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -802,11 +819,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YZLS8GBXE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "E_Learning/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

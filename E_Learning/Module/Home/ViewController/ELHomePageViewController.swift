@@ -17,6 +17,15 @@ class ELHomePageViewController: ELBasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        
+        lazy var moreBtn: UIButton = {
+            let button = UIButton(type: .contactAdd)
+            button.center = view.center
+            button.addTarget(self, action: #selector(doneButtonClick), for: .touchUpInside)
+            return button
+        }()
+        view.addSubview(moreBtn)
+        
         layout()
         binding()
     }
@@ -37,5 +46,9 @@ class ELHomePageViewController: ELBasicViewController {
     
     private func binding() {
         
+    }
+    
+    @objc func doneButtonClick() {
+        Navigator.nav2TestVC()
     }
 }

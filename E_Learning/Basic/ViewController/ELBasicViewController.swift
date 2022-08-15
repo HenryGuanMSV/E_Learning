@@ -51,6 +51,8 @@ class ELBasicViewController: UIViewController {
         
         // 返回按钮
         self.setBackNavigationBarWithAction(action: #selector(popViewControllerAnimated))
+        // 隐藏导航条
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     open func setupNavBarMainStyle() {
