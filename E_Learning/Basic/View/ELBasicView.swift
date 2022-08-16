@@ -23,16 +23,4 @@ class ELBasicView: UIView {
         return Bundle.main.loadNibNamed(loadName, owner: nil, options: nil)![index] as! Self
     }
     
-   // 添加圆角
-    func addDefaultCorner() {
-        self.layer.cornerRadius = scaleNum(defaultCorner)
-    }
-    
-    // 添加阴影
-    func addDefaultShadow() {
-        self.layer.shadowOffset = CGSize(width: 0, height: 0)
-        self.layer.shadowOpacity = 1
-        self.layer.shadowRadius = scaleNum(defaultShadow)
-        self.layer.shadowColor = UIColor.shadowColor.cgColor
-    }
 }

@@ -55,6 +55,7 @@
 		0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AC28A9ED25005874D8 /* R.generated.swift */; };
 		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
 		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
+		00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BF28AB81A5000EDC03 /* ELIntroView.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,7 @@
 		0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator+Home.swift"; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
 		00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailViewController.swift; sourceTree = "<group>"; };
+		00D191BF28AB81A5000EDC03 /* ELIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELIntroView.swift; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -473,6 +475,7 @@
 		00D191BA28AB61F7000EDC03 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00D191BF28AB81A5000EDC03 /* ELIntroView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				0044623428A89F8C00AED895 /* ELMyViewController.swift in Sources */,
 				000BD559289A229100B9100E /* ELDarkModeUtil.swift in Sources */,
 				000BD537289A1D0B00B9100E /* CALayer.swift in Sources */,
+				00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */,
 				001F805C28A77B8200F8C6EF /* ELNetAPI.swift in Sources */,
 				0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */,
 				0043F64028A6439500B567AA /* ELDataParseReqPlugin.swift in Sources */,

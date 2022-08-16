@@ -181,6 +181,9 @@ extension UIColor {
         return UIColor.colorWithString("#007CC3")
     }
     
+    class var titleColor: UIColor {
+        return UIColor.colorWithString("#040148")
+    }
 
     class var naviColor : UIColor {
         let config = NaviBarConfig()

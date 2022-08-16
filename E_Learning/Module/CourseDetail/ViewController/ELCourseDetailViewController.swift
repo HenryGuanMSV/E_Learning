@@ -8,25 +8,26 @@
 import UIKit
 import Then
 
-let playViewHeight = 240.0
-
-let introViewWidth = 359.0
-let introViewHeight = 120.0 // 暂时写死
-let introViewTopOffset = 30.0
-
-let processViewHeight = 104.0
-let processViewTopOffset = 12.0
-
-let teacherViewViewHeight = 204.0 // 暂时写死
-let teacherViewViewTopOffset = 12.0
-
-let courseListViewHeight = 727.5 // 暂时写死
-let courseListViewTopOffset = 12.0
-
-let scrollViewBottomOffset = 12.0 + TABBAR_HEIGHT_X
 
 class ELCourseDetailViewController: ELBasicViewController {
 
+    let playViewHeight = 240.0
+
+    let introViewWidth = 359.0
+    let introViewTopOffset = 30.0
+
+    let processViewHeight = 104.0
+    let processViewTopOffset = 12.0
+
+    let teacherViewViewHeight = 204.0 // 暂时写死
+    let teacherViewViewTopOffset = 12.0
+
+    let courseListViewHeight = 727.5 // 暂时写死
+    let courseListViewTopOffset = 12.0
+
+    let scrollViewBottomOffset = 12.0 + TABBAR_HEIGHT_X
+
+    
     private let scrollView = UIScrollView().then() {
         $0.showsVerticalScrollIndicator = false
         $0.showsHorizontalScrollIndicator = false
@@ -39,26 +40,26 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.addDefaultCorner()
     }
     
-    private let introView = ELBasicView().then() {
-        $0.backgroundColor = .white
+    private let introView = ELIntroView().then() {
+        $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
     }
     
     private let processView = ELBasicView().then() {
-        $0.backgroundColor = .white
+        $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
     }
 
     private let teacherView = ELBasicView().then() {
-        $0.backgroundColor = .white
+        $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
     }
     
     private let courseListView = ELBasicView().then() {
-        $0.backgroundColor = .white
+        $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
     }
@@ -104,7 +105,6 @@ class ELCourseDetailViewController: ELBasicViewController {
         }
         introView.snp.makeConstraints { make in
             make.width.equalTo(scaleNum(introViewWidth))
-            make.height.equalTo(scaleNum(introViewHeight))
             make.top.equalTo(playView.snp.bottom).offset(-scaleNum(introViewTopOffset))
             make.centerX.equalTo(playView.snp.centerX)
         }
