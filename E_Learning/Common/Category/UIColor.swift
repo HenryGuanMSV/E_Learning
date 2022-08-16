@@ -158,12 +158,17 @@ extension UIColor {
     
     /** 主色 - xxx */
     class var mainColor : UIColor {
-        return self.colorLightDark(light: UIColor.white, dark: UIColor.colorWithString("#282828"))
+        return self.colorLightDark(light: UIColor.colorWithString("#EEF1F3"), dark: UIColor.colorWithString("#EEF1F3"))
     }
     
     /** 白色 - #FFFFFF */
     class var whiteColor : UIColor {
         return UIColor.colorWithString("#FFFFFF")
+    }
+    
+    /** 阴影黑色 - #000000 */
+    class var shadowColor : UIColor {
+        return UIColor.colorWithString("#000000", alpha: 0.1)
     }
     
     /** tabbar背景色 - #FFFFFF */

@@ -54,6 +54,7 @@
 		0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC8828A623EA008DC1F1 /* ELProgressHUD.swift */; };
 		0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AC28A9ED25005874D8 /* R.generated.swift */; };
 		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
+		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		0063F1AC28A9ED25005874D8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator+Home.swift"; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
+		00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailViewController.swift; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +214,7 @@
 		001F805D28A7D88C00F8C6EF /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				00D191B828AB61D0000EDC03 /* CourseDetail */,
 				001F806828A7D9BB00F8C6EF /* My */,
 				001F806328A7D99800F8C6EF /* Course */,
 				001F805E28A7D97200F8C6EF /* Home */,
@@ -448,6 +451,46 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		00D191B828AB61D0000EDC03 /* CourseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				00D191BC28AB6201000EDC03 /* ViewModel */,
+				00D191BB28AB61FC000EDC03 /* Model */,
+				00D191BA28AB61F7000EDC03 /* View */,
+				00D191B928AB61EF000EDC03 /* ViewController */,
+			);
+			path = CourseDetail;
+			sourceTree = "<group>";
+		};
+		00D191B928AB61EF000EDC03 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		00D191BA28AB61F7000EDC03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00D191BB28AB61FC000EDC03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00D191BC28AB6201000EDC03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1102D3B31C69B05D923657BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +649,7 @@
 				0059CC8028A61E8D008DC1F1 /* Navigator.swift in Sources */,
 				000BD55E289A229100B9100E /* ELSystemTools.swift in Sources */,
 				000BD566289A23D200B9100E /* SuperOB.swift in Sources */,
+				00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */,
 				0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */,
 				000BD539289A1D0B00B9100E /* UIView.swift in Sources */,
 				000BD562289A229100B9100E /* ELImageUtil.swift in Sources */,
