@@ -6,15 +6,17 @@
 //
 
 import UIKit
+import SwiftyFitsize
 
 class ELIntroView: ELBasicView {
     
-    let titleLabelTop = 25.5
-    let titleLeft = 12.0
+    let titleLabelTop = 25.5∥
+    let titleLeft = 12.0≈
 
-    let submitBtnWidth = 335.0
-    let submitBtnHeight = 36.0
-    let submitBtnTop = 26.0
+    let submitBtnWidth = 335.0≈
+    let submitBtnHeight = 36.0∥
+    let submitBtnTop = 26.0∥
+    let submitBtnBottom = 16.0∥
     
     private let titleLabel = UILabel().then() {
         $0.backgroundColor = .clear
@@ -25,7 +27,7 @@ class ELIntroView: ELBasicView {
     }
     
     private let submitBtn = UIButton(type: .custom).then {
-        $0.backgroundColor = .bm_colorGradientChangeWithSize(frame: CGRect(x: 0, y: 0, width: scaleNum(335.0), height: scaleNum(36.0)), direction:.GradientChangeDirectionLevel, startColor: .colorWithString("#3774F3"), endColor: .colorWithString("#AD05FB"), locations: [0,1], startPoint: CGPoint(x: 0.5, y: 0.5), endPoint: CGPoint(x: 0.5, y: 0.5))
+        $0.backgroundColor = .bm_colorGradientChangeWithSize(frame: CGRect(x: 0, y: 0, width: 335.0≈, height: 36.0∥), direction:.GradientChangeDirectionLevel, startColor: .colorWithString("#3774F3"), endColor: .colorWithString("#AD05FB"), locations: [0,1], startPoint: CGPoint(x: 0.5, y: 0.5), endPoint: CGPoint(x: 0.5, y: 0.5))
         $0.addDefaultShadow()
         $0.addDefaultCorner()
         $0.setTitle("Start", for: .normal)
@@ -52,17 +54,17 @@ class ELIntroView: ELBasicView {
     
     private func layout() {
         titleLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(scaleNum(titleLabelTop))
-            make.left.equalToSuperview().offset(scaleNum(titleLeft))
-            make.right.lessThanOrEqualTo(self.snp.right).offset(scaleNum(-titleLeft))
+            make.top.equalToSuperview().offset(titleLabelTop)
+            make.left.equalToSuperview().offset(titleLeft)
+            make.right.lessThanOrEqualTo(self.snp.right).offset(-titleLeft)
         }
         
         submitBtn.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.width.equalTo(scaleNum(submitBtnWidth))
-            make.height.equalTo(scaleNum(submitBtnHeight))
-            make.top.equalTo(titleLabel.snp.bottom).offset(scaleNum(submitBtnTop))
-            make.bottom.lessThanOrEqualTo(self.snp.bottom).offset(scaleNum(-submitBtnTop))
+            make.width.equalTo(submitBtnWidth)
+            make.height.equalTo(submitBtnHeight)
+            make.top.equalTo(titleLabel.snp.bottom).offset(submitBtnTop)
+            make.bottom.lessThanOrEqualTo(self.snp.bottom).offset(-submitBtnBottom)
         }
     }
 }

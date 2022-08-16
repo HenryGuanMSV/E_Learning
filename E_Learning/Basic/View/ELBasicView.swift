@@ -7,8 +7,6 @@
 
 import UIKit
 
-let defaultCorner = 8.0
-let defaultShadow = 120.0
 
 class ELBasicView: UIView {
 

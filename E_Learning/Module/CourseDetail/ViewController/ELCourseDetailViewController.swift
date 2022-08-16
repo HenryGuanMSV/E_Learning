@@ -7,25 +7,25 @@
 
 import UIKit
 import Then
-
+import SwiftyFitsize
 
 class ELCourseDetailViewController: ELBasicViewController {
 
-    let playViewHeight = 240.0
+    let playViewHeight = 240.0∥
 
-    let introViewWidth = 359.0
-    let introViewTopOffset = 30.0
+    let introViewWidth = 359.0≈
+    let introViewTopOffset = 30.0∥
 
-    let processViewHeight = 104.0
-    let processViewTopOffset = 12.0
+    let processViewHeight = 104.0∥
+    let processViewTopOffset = 12.0∥
 
-    let teacherViewViewHeight = 204.0 // 暂时写死
-    let teacherViewViewTopOffset = 12.0
+    let teacherViewViewHeight = 204.0∥ // 暂时写死
+    let teacherViewViewTopOffset = 12.0∥
 
-    let courseListViewHeight = 727.5 // 暂时写死
-    let courseListViewTopOffset = 12.0
+    let courseListViewHeight = 727.5∥ // 暂时写死
+    let courseListViewTopOffset = 12.0∥
 
-    let scrollViewBottomOffset = 12.0 + TABBAR_HEIGHT_X
+    let scrollViewBottomOffset = 12.0∥ + TABBAR_HEIGHT_X
 
     
     private let scrollView = UIScrollView().then() {
@@ -101,31 +101,31 @@ class ELCourseDetailViewController: ELBasicViewController {
         playView.snp.makeConstraints { make in
             make.top.left.equalToSuperview()
             make.width.equalTo(SCREEN_WIDTH)
-            make.height.equalTo(scaleNum(playViewHeight))
+            make.height.equalTo(playViewHeight)
         }
         introView.snp.makeConstraints { make in
-            make.width.equalTo(scaleNum(introViewWidth))
-            make.top.equalTo(playView.snp.bottom).offset(-scaleNum(introViewTopOffset))
+            make.width.equalTo(introViewWidth)
+            make.top.equalTo(playView.snp.bottom).offset(-introViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
         processView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(scaleNum(processViewHeight))
-            make.top.equalTo(introView.snp.bottom).offset(scaleNum(processViewTopOffset))
+            make.height.equalTo(processViewHeight)
+            make.top.equalTo(introView.snp.bottom).offset(processViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
         teacherView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(scaleNum(teacherViewViewHeight))
-            make.top.equalTo(processView.snp.bottom).offset(scaleNum(teacherViewViewTopOffset))
+            make.height.equalTo(teacherViewViewHeight)
+            make.top.equalTo(processView.snp.bottom).offset(teacherViewViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
         courseListView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(scaleNum(courseListViewHeight))
-            make.top.equalTo(teacherView.snp.bottom).offset(scaleNum(courseListViewTopOffset))
+            make.height.equalTo(courseListViewHeight)
+            make.top.equalTo(teacherView.snp.bottom).offset(courseListViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
-            make.bottom.lessThanOrEqualTo(scrollView.snp.bottom).offset(-scaleNum(scrollViewBottomOffset))
+            make.bottom.lessThanOrEqualTo(scrollView.snp.bottom).offset(-scrollViewBottomOffset)
         }
     }
     
