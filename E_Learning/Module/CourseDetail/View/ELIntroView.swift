@@ -30,7 +30,7 @@ class ELIntroView: ELBasicView {
         $0.backgroundColor = .bm_colorGradientChangeWithSize(frame: CGRect(x: 0, y: 0, width: 335.0≈, height: 36.0∥), direction:.GradientChangeDirectionLevel, startColor: .colorWithString("#3774F3"), endColor: .colorWithString("#AD05FB"), locations: [0,1], startPoint: CGPoint(x: 0.5, y: 0.5), endPoint: CGPoint(x: 0.5, y: 0.5))
         $0.addDefaultShadow()
         $0.addDefaultCorner()
-        $0.setTitle("Start", for: .normal)
+        $0.setTitle(INTRO_START_BUTTON, for: .normal)
         $0.setTitleColor(.whiteColor, for: .normal)
         $0.titleLabel?.font = UIFont.pingFangRegular(16)
         $0.titleLabel?.textAlignment = .center

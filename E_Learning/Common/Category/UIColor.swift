@@ -171,6 +171,11 @@ extension UIColor {
         return UIColor.colorWithString("#000000", alpha: 0.1)
     }
     
+    /** 灰色 - #E4E7E8 */
+    class var grayColor : UIColor {
+        return UIColor.colorWithString("#E4E7E8")
+    }
+    
     /** tabbar背景色 - #FFFFFF */
     class var tabbarBGColor : UIColor {
         return UIColor.colorWithString("#FFFFFF")
@@ -181,10 +186,22 @@ extension UIColor {
         return UIColor.colorWithString("#007CC3")
     }
     
+    /** 标题颜色 - #040148 */
     class var titleColor: UIColor {
         return UIColor.colorWithString("#040148")
     }
 
+    /** 副标题颜色 - #151641 */
+    class var subTitleColor: UIColor {
+        return UIColor.colorWithString("#151641")
+    }
+
+    /** 半透明副标题颜色 - #151641 */
+    class var subTitleAlphaColor: UIColor {
+        return UIColor.colorWithString("#151641", alpha: 0.6)
+    }
+
+    
     class var naviColor : UIColor {
         let config = NaviBarConfig()
         let naviColorLight = UIColor.bm_colorGradient(size: config.size, colors: config.colors, points: config.points, locations: config.locations)
