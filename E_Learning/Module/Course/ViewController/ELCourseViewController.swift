@@ -38,6 +38,6 @@ class ELCourseViewController: ELBasicViewController {
     }
     
     private func binding() {
-        
+        view.backgroundColor = .black
     }
 }
