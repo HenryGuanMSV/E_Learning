@@ -16,7 +16,7 @@ class ELCourseViewController: ELBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .yellow
         layout()
         binding()
     }
