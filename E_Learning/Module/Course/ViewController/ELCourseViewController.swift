@@ -25,6 +25,8 @@ class ELCourseViewController: ELBasicViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.backgroundColor = .blue
+        view.backgroundColor = .blue
+        
     }
 
     /** 视图即将移除 */
