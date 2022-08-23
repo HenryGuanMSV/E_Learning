@@ -60,6 +60,8 @@
 		278321E228B4ADB500309F55 /* RCGradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E128B4ADB500309F55 /* RCGradientProgressView.swift */; };
 		278321E428B4B2E000309F55 /* ELCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E328B4B2E000309F55 /* ELCourseInfoView.swift */; };
 		278321E628B4B3B800309F55 /* ELNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E528B4B3B800309F55 /* ELNameView.swift */; };
+		278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */; };
+		27CFE68D28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,8 @@
 		278321E128B4ADB500309F55 /* RCGradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCGradientProgressView.swift; sourceTree = "<group>"; };
 		278321E328B4B2E000309F55 /* ELCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoView.swift; sourceTree = "<group>"; };
 		278321E528B4B3B800309F55 /* ELNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELNameView.swift; sourceTree = "<group>"; };
+		278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoContentView.swift; sourceTree = "<group>"; };
+		27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoTitleView.swift; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -414,6 +418,8 @@
 				278321E128B4ADB500309F55 /* RCGradientProgressView.swift */,
 				278321E328B4B2E000309F55 /* ELCourseInfoView.swift */,
 				278321E528B4B3B800309F55 /* ELNameView.swift */,
+				27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */,
+				278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -575,6 +581,7 @@
 				001F806F28A7DB5300F8C6EF /* ELCoreManager.swift in Sources */,
 				0059CC8028A61E8D008DC1F1 /* Navigator.swift in Sources */,
 				000BD55E289A229100B9100E /* ELSystemTools.swift in Sources */,
+				278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */,
 				000BD566289A23D200B9100E /* SuperOB.swift in Sources */,
 				00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */,
 				0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */,
@@ -611,6 +618,7 @@
 				000BD53E289A1D0B00B9100E /* Dictionary.swift in Sources */,
 				0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */,
 				000BD538289A1D0B00B9100E /* Date.swift in Sources */,
+				27CFE68D28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift in Sources */,
 				000BD544289A1D0B00B9100E /* UIFont.swift in Sources */,
 				001F805A28A77A3200F8C6EF /* ELAPIClient.swift in Sources */,
 				0044623028A89D7900AED895 /* ELHomePageViewController.swift in Sources */,

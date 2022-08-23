@@ -115,7 +115,6 @@ class ELCourseDetailViewController: ELBasicViewController {
         }
         infoView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(teacherViewViewHeight)
             make.top.equalTo(processView.snp.bottom).offset(teacherViewViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }

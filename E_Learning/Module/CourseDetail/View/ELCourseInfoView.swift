@@ -41,7 +41,7 @@ class ELCourseInfoView: ELBasicView {
         $0.text = "ZhiPeng Ni" // 暂时写死
     }
 
-    private let contentView = UIView().then() {
+    private let contentView = ELCourseInfoContentView().then() {
         $0.backgroundColor = .nameContentViewBGColor
         $0.addDefaultCorner()
     }
@@ -86,7 +86,6 @@ class ELCourseInfoView: ELBasicView {
             make.left.right.equalToSuperview()
             make.top.equalTo(nameView.snp.bottom).offset(contentViewTop)
             make.bottom.equalToSuperview()
-            make.height.equalTo(contentViewHeight)
         }
     }
 }

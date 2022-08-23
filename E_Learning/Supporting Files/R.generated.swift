@@ -130,8 +130,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 7 images.
   struct image {
+    /// Image `icon／arrowDown32`.
+    static let iconArrowDown32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowDown32")
     /// Image `tabbar_chat_enabled`.
     static let tabbar_chat_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_chat_enabled")
     /// Image `tabbar_chat`.
@@ -144,6 +146,13 @@ struct R: Rswift.Validatable {
     static let tabbar_me_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me_enabled")
     /// Image `tabbar_me`.
     static let tabbar_me = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon／arrowDown32", bundle: ..., traitCollection: ...)`
+    static func iconArrowDown32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconArrowDown32, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "tabbar_chat", bundle: ..., traitCollection: ...)`

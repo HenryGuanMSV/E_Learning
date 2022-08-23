@@ -65,6 +65,7 @@ let PROGREE_STATUS_TITLE = "Status: Started"
 
 /** 课程信息提示 */
 let COURSE_INFO_TITLE = "Curator / Contacts"
+let COURSE_INFO_CONTENT_TITLE = "Course Information"
 
 /** tabbar标题 */
 let HOME_TABBAR_NAME = "Home"
