@@ -57,6 +57,7 @@
 		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
 		00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BF28AB81A5000EDC03 /* ELIntroView.swift */; };
 		00D191C428AB92F2000EDC03 /* ELProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191C328AB92F2000EDC03 /* ELProgressView.swift */; };
+		278321E228B4ADB500309F55 /* RCGradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E128B4ADB500309F55 /* RCGradientProgressView.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,7 @@
 		00D191C328AB92F2000EDC03 /* ELProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELProgressView.swift; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
+		278321E128B4ADB500309F55 /* RCGradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCGradientProgressView.swift; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -229,9 +231,6 @@
 		001F805E28A7D97200F8C6EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				001F806228A7D99200F8C6EF /* Model */,
-				001F806128A7D98C00F8C6EF /* ViewModel */,
-				001F806028A7D98500F8C6EF /* View */,
 				001F805F28A7D97900F8C6EF /* ViewController */,
 			);
 			path = Home;
@@ -245,33 +244,9 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		001F806028A7D98500F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806128A7D98C00F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		001F806228A7D99200F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		001F806328A7D99800F8C6EF /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				001F806628A7D9A800F8C6EF /* Model */,
-				001F806728A7D9AF00F8C6EF /* ViewModel */,
-				001F806528A7D9A400F8C6EF /* View */,
 				001F806428A7D99D00F8C6EF /* ViewController */,
 			);
 			path = Course;
@@ -285,33 +260,9 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		001F806528A7D9A400F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806628A7D9A800F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		001F806728A7D9AF00F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		001F806828A7D9BB00F8C6EF /* My */ = {
 			isa = PBXGroup;
 			children = (
-				001F806B28A7D9CD00F8C6EF /* Model */,
-				001F806C28A7D9D200F8C6EF /* ViewModel */,
-				001F806A28A7D9C600F8C6EF /* View */,
 				001F806928A7D9C000F8C6EF /* ViewController */,
 			);
 			path = My;
@@ -323,27 +274,6 @@
 				0044623328A89F8C00AED895 /* ELMyViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		001F806A28A7D9C600F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806B28A7D9CD00F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		001F806C28A7D9D200F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		001F806D28A7DA4300F8C6EF /* Manages */ = {
@@ -458,8 +388,6 @@
 		00D191B828AB61D0000EDC03 /* CourseDetail */ = {
 			isa = PBXGroup;
 			children = (
-				00D191BC28AB6201000EDC03 /* ViewModel */,
-				00D191BB28AB61FC000EDC03 /* Model */,
 				00D191BA28AB61F7000EDC03 /* View */,
 				00D191B928AB61EF000EDC03 /* ViewController */,
 			);
@@ -479,22 +407,9 @@
 			children = (
 				00D191BF28AB81A5000EDC03 /* ELIntroView.swift */,
 				00D191C328AB92F2000EDC03 /* ELProgressView.swift */,
+				278321E128B4ADB500309F55 /* RCGradientProgressView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		00D191BB28AB61FC000EDC03 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		00D191BC28AB6201000EDC03 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1102D3B31C69B05D923657BE /* Pods */ = {
@@ -659,6 +574,7 @@
 				0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */,
 				000BD539289A1D0B00B9100E /* UIView.swift in Sources */,
 				000BD562289A229100B9100E /* ELImageUtil.swift in Sources */,
+				278321E228B4ADB500309F55 /* RCGradientProgressView.swift in Sources */,
 				0044623228A89F5E00AED895 /* ELCourseViewController.swift in Sources */,
 				000BD53B289A1D0B00B9100E /* UIColor.swift in Sources */,
 				000BD542289A1D0B00B9100E /* UIViewController.swift in Sources */,

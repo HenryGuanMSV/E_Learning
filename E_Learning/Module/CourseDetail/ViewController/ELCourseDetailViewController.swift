@@ -46,7 +46,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.addDefaultShadow()
     }
     
-    private let processView = ELBasicView().then() {
+    private let processView = ELProgressView().then() {
         $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
@@ -110,7 +110,6 @@ class ELCourseDetailViewController: ELBasicViewController {
         }
         processView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(processViewHeight)
             make.top.equalTo(introView.snp.bottom).offset(processViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
