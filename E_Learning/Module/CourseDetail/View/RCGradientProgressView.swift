@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RCGradientProgressView: UIView {
+class RCGradientProgressView: ELBasicView {
 
     //进度条完成部分的渐变颜色，设置单个为纯色，设置多个为渐变色
     public var progressColors: [UIColor] = [.blue] {

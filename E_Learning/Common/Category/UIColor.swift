@@ -201,6 +201,16 @@ extension UIColor {
         return UIColor.colorWithString("#151641", alpha: 0.6)
     }
 
+    /** 姓名背景颜色 -  #EEDBEE */
+    class var nameViewBGColor: UIColor {
+        return UIColor.colorWithString("#EEDBEE")
+    }
+
+    /** 半透明背景颜色 */
+    class var nameContentViewBGColor: UIColor {
+        return UIColor.colorWithString("#EEF1F3", alpha: 0.8)
+    }
+
     
     class var naviColor : UIColor {
         let config = NaviBarConfig()

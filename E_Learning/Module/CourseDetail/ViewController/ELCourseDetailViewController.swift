@@ -25,7 +25,7 @@ class ELCourseDetailViewController: ELBasicViewController {
     let courseListViewHeight = 727.5∥ // 暂时写死
     let courseListViewTopOffset = 12.0∥
 
-    let scrollViewBottomOffset = 12.0∥ + TABBAR_HEIGHT_X
+    let scrollViewBottomOffset = 25.0∥
 
     
     private let scrollView = UIScrollView().then() {
@@ -52,7 +52,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.addDefaultShadow()
     }
 
-    private let teacherView = ELBasicView().then() {
+    private let infoView = ELCourseInfoView().then() {
         $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
@@ -90,7 +90,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         scrollView.addSubview(playView)
         scrollView.addSubview(introView)
         scrollView.addSubview(processView)
-        scrollView.addSubview(teacherView)
+        scrollView.addSubview(infoView)
         scrollView.addSubview(courseListView)
     }
     
@@ -113,7 +113,7 @@ class ELCourseDetailViewController: ELBasicViewController {
             make.top.equalTo(introView.snp.bottom).offset(processViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
-        teacherView.snp.makeConstraints { make in
+        infoView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
             make.height.equalTo(teacherViewViewHeight)
             make.top.equalTo(processView.snp.bottom).offset(teacherViewViewTopOffset)
@@ -122,7 +122,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         courseListView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
             make.height.equalTo(courseListViewHeight)
-            make.top.equalTo(teacherView.snp.bottom).offset(courseListViewTopOffset)
+            make.top.equalTo(infoView.snp.bottom).offset(courseListViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
             make.bottom.lessThanOrEqualTo(scrollView.snp.bottom).offset(-scrollViewBottomOffset)
         }
