@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ELHomePageViewController: ELBasicViewController {
+class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
 
+    var banner: AKBannerView!
+    
     // MARK: 销毁
     deinit {
         print("销毁ELHomePageViewController")
@@ -28,6 +30,7 @@ class ELHomePageViewController: ELBasicViewController {
         
         layout()
         binding()
+        creatBanner()
     }
     
     /** 视图即将出现 */
@@ -44,6 +47,30 @@ class ELHomePageViewController: ELBasicViewController {
         
     }
     
+    func creatBanner()  {
+        
+        let items: [AKBannerItem] = [
+            AKBannerItem(image: "banner_1".localizedImage),
+            AKBannerItem(image: "banner_2".localizedImage),
+            AKBannerItem(image: "banner_3".localizedImage)
+        ]
+        banner = .init(frame: CGRect.init(x: 0, y: 0, width: self.view.width, height: 300))
+        banner.setup(
+            type: BannerViewScrollType.fromStart,
+            timeForOneItem: 2,
+            bannerItems: items,
+            delegate: self
+        )
+        
+        let maskPath = UIBezierPath(roundedRect: banner.bounds, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.bottomLeft], cornerRadii: CGSize(width: 20, height: 20))
+
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = banner.bounds
+        maskLayer.path = maskPath.cgPath
+        banner.layer.mask = maskLayer
+        
+        self.view.addSubview(banner)
+    }
     private func binding() {
         
     }
@@ -51,4 +78,5 @@ class ELHomePageViewController: ELBasicViewController {
     @objc func doneButtonClick() {
         Navigator.nav2TestVC()
     }
+    
 }

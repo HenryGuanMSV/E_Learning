@@ -8,6 +8,23 @@
 import Foundation
 
 extension Array {
+    
+    func safelyGet(_ i : Int) -> Element? {
+        if i >= 0 && i < count {
+            return self[i]
+        } else {
+            return nil
+        }
+    }
+    
+    mutating func safelyDelete(_ i: Int) -> Element? {
+        if i >= 0 && i < count {
+            return remove(at: i)
+        } else {
+            return nil
+        }
+    }
+    
     /** 防止数组越界 */ 
     subscript(safe index: Int) -> Element? {
         if self.count > index {

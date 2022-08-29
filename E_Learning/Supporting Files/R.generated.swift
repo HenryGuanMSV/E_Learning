@@ -130,8 +130,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
+    /// Image `banner_1`.
+    static let banner_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_1")
+    /// Image `banner_2`.
+    static let banner_2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_2")
+    /// Image `banner_3`.
+    static let banner_3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_3")
     /// Image `tabbar_chat_enabled`.
     static let tabbar_chat_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_chat_enabled")
     /// Image `tabbar_chat`.
@@ -144,6 +150,27 @@ struct R: Rswift.Validatable {
     static let tabbar_me_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me_enabled")
     /// Image `tabbar_me`.
     static let tabbar_me = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "banner_1", bundle: ..., traitCollection: ...)`
+    static func banner_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.banner_1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "banner_2", bundle: ..., traitCollection: ...)`
+    static func banner_2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.banner_2, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "banner_3", bundle: ..., traitCollection: ...)`
+    static func banner_3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.banner_3, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "tabbar_chat", bundle: ..., traitCollection: ...)`

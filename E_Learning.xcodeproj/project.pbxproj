@@ -55,6 +55,14 @@
 		0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AC28A9ED25005874D8 /* R.generated.swift */; };
 		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
+		FBA43C2D28B8B50B00933EE3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA43C2C28B8B50B00933EE3 /* UIApplication.swift */; };
+		FBA43C2F28B8C3B900933EE3 /* localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA43C2E28B8C3B900933EE3 /* localizable.swift */; };
+		FBC5A73B28B74949009E3FED /* AKBannerPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A72F28B74949009E3FED /* AKBannerPageControl.swift */; };
+		FBC5A73C28B74949009E3FED /* AKBannerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A73028B74949009E3FED /* AKBannerItem.swift */; };
+		FBC5A73D28B74949009E3FED /* AKBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A73228B74949009E3FED /* AKBannerView.swift */; };
+		FBC5A73E28B74949009E3FED /* AKBannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A73328B74949009E3FED /* AKBannerDataSource.swift */; };
+		FBC5A73F28B74949009E3FED /* AKBannerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A73428B74949009E3FED /* AKBannerCollectionView.swift */; };
+		FBC5A74028B74949009E3FED /* AKBannerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5A73528B74949009E3FED /* AKBannerCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +119,14 @@
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA43C2C28B8B50B00933EE3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		FBA43C2E28B8C3B900933EE3 /* localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = localizable.swift; sourceTree = "<group>"; };
+		FBC5A72F28B74949009E3FED /* AKBannerPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerPageControl.swift; sourceTree = "<group>"; };
+		FBC5A73028B74949009E3FED /* AKBannerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerItem.swift; sourceTree = "<group>"; };
+		FBC5A73228B74949009E3FED /* AKBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerView.swift; sourceTree = "<group>"; };
+		FBC5A73328B74949009E3FED /* AKBannerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerDataSource.swift; sourceTree = "<group>"; };
+		FBC5A73428B74949009E3FED /* AKBannerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerCollectionView.swift; sourceTree = "<group>"; };
+		FBC5A73528B74949009E3FED /* AKBannerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKBannerCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +155,7 @@
 		000BD526289A1D0B00B9100E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FBA43C2E28B8C3B900933EE3 /* localizable.swift */,
 				000BD52A289A1D0B00B9100E /* Array.swift */,
 				000BD52E289A1D0B00B9100E /* Dictionary.swift */,
 				000BD549289A1FFD00B9100E /* String.swift */,
@@ -154,6 +171,7 @@
 				000BD52D289A1D0B00B9100E /* UITableView.swift */,
 				000BD532289A1D0B00B9100E /* UIViewController.swift */,
 				000BD536289A1D0B00B9100E /* UIAlertController.swift */,
+				FBA43C2C28B8B50B00933EE3 /* UIApplication.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -161,6 +179,7 @@
 		000BD54B289A229100B9100E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FBC5A72E28B74949009E3FED /* Banner */,
 				000BD54F289A229100B9100E /* Rx+MJRefresh */,
 				000BD54C289A229100B9100E /* ELJsonUtil.swift */,
 				000BD54D289A229100B9100E /* ELDarkModeUtil.swift */,
@@ -465,6 +484,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FBC5A72E28B74949009E3FED /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5A72F28B74949009E3FED /* AKBannerPageControl.swift */,
+				FBC5A73028B74949009E3FED /* AKBannerItem.swift */,
+				FBC5A73228B74949009E3FED /* AKBannerView.swift */,
+				FBC5A73328B74949009E3FED /* AKBannerDataSource.swift */,
+				FBC5A73428B74949009E3FED /* AKBannerCollectionView.swift */,
+				FBC5A73528B74949009E3FED /* AKBannerCollectionCell.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -601,6 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA43C2D28B8B50B00933EE3 /* UIApplication.swift in Sources */,
 				000BD540289A1D0B00B9100E /* UIButton.swift in Sources */,
 				001F806F28A7DB5300F8C6EF /* ELCoreManager.swift in Sources */,
 				0059CC8028A61E8D008DC1F1 /* Navigator.swift in Sources */,
@@ -609,6 +642,7 @@
 				0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */,
 				000BD539289A1D0B00B9100E /* UIView.swift in Sources */,
 				000BD562289A229100B9100E /* ELImageUtil.swift in Sources */,
+				FBC5A74028B74949009E3FED /* AKBannerCollectionCell.swift in Sources */,
 				0044623228A89F5E00AED895 /* ELCourseViewController.swift in Sources */,
 				000BD53B289A1D0B00B9100E /* UIColor.swift in Sources */,
 				000BD542289A1D0B00B9100E /* UIViewController.swift in Sources */,
@@ -621,11 +655,15 @@
 				001F805C28A77B8200F8C6EF /* ELNetAPI.swift in Sources */,
 				0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */,
 				0043F64028A6439500B567AA /* ELDataParseReqPlugin.swift in Sources */,
+				FBC5A73F28B74949009E3FED /* AKBannerCollectionView.swift in Sources */,
 				000BD54A289A1FFD00B9100E /* String.swift in Sources */,
 				000BD53C289A1D0B00B9100E /* UINavigationItem.swift in Sources */,
+				FBC5A73B28B74949009E3FED /* AKBannerPageControl.swift in Sources */,
 				000BD548289A1EFA00B9100E /* Global.swift in Sources */,
 				0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */,
 				000BD546289A1D0B00B9100E /* UIAlertController.swift in Sources */,
+				FBC5A73E28B74949009E3FED /* AKBannerDataSource.swift in Sources */,
+				FBC5A73C28B74949009E3FED /* AKBannerItem.swift in Sources */,
 				000BD53A289A1D0B00B9100E /* Array.swift in Sources */,
 				000BD561289A229100B9100E /* ELNotificationKeyUtil.swift in Sources */,
 				0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */,
@@ -638,9 +676,11 @@
 				000BD544289A1D0B00B9100E /* UIFont.swift in Sources */,
 				001F805A28A77A3200F8C6EF /* ELAPIClient.swift in Sources */,
 				0044623028A89D7900AED895 /* ELHomePageViewController.swift in Sources */,
+				FBA43C2F28B8C3B900933EE3 /* localizable.swift in Sources */,
 				000BD541289A1D0B00B9100E /* UIImage.swift in Sources */,
 				0059CC7B28A6189D008DC1F1 /* ELBasicView.swift in Sources */,
 				001F805728A7776D00F8C6EF /* ELNetAPIManagers.swift in Sources */,
+				FBC5A73D28B74949009E3FED /* AKBannerView.swift in Sources */,
 				000BD560289A229100B9100E /* ELStringUtil.swift in Sources */,
 				000BD53D289A1D0B00B9100E /* UITableView.swift in Sources */,
 				0059CC7D28A61946008DC1F1 /* ELBasicTableViewCell.swift in Sources */,
