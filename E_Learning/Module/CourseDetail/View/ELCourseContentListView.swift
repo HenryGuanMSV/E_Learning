@@ -122,6 +122,7 @@ extension ELCourseContentListView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellID, for: indexPath)
+        cell.selectionStyle = .none
         switch indexPath.section {
         case 0:
             cell.backgroundColor = .green

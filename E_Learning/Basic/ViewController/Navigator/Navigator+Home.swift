@@ -11,6 +11,9 @@ import UIKit
 
 
 extension Navigator {
+    
+    
+    
     static func nav2TestVC(_ nav:RTRootNavigationController? = nil) {
         let controller       = ELCourseDetailViewController()
         controller.title     = "课程详情"

@@ -17,6 +17,8 @@ class ELCourseDetailNavView: ELBasicView {
     let searchBtnSize = 16.0≈
     let searchBtnRight = 16.0≈
     
+    let backBtnClosure: () -> Void
+    
     private let bgView = UIView().then() {
         $0.backgroundColor = .navBgColor
     }
@@ -30,11 +32,13 @@ class ELCourseDetailNavView: ELBasicView {
         $0.backgroundColor = .clear
         $0.setBackgroundImage(UIImage(named: "icon／search32"), for: .normal)
     }
-    
-    override init(frame: CGRect) {
+        
+    required init(frame: CGRect, btnBackClosure: @escaping () -> Void) {
+        self.backBtnClosure = btnBackClosure
         super.init(frame: frame)
         setupViews()
         layout()
+        addEvent()
     }
     
     @available(*, unavailable)
@@ -67,6 +71,14 @@ class ELCourseDetailNavView: ELBasicView {
         }
     }
 
+    private func addEvent() {
+        backBtn.addTarget(self, action: #selector(backBtnClick), for: .touchUpInside)
+    }
+    
+    @objc func backBtnClick() {
+        self.backBtnClosure()
+    }
+    
     func show() {
         self.bgView.alpha = 1.0
     }

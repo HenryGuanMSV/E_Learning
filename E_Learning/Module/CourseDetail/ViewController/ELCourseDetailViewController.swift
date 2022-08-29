@@ -27,9 +27,7 @@ class ELCourseDetailViewController: ELBasicViewController {
 
     let scrollViewBottomOffset = 25.0∥
     
-    private let navView = ELCourseDetailNavView().then() {_ in
-
-    }
+    private var navView: ELCourseDetailNavView!
     
     private let scrollView = UIScrollView().then() {
         $0.showsVerticalScrollIndicator = false
@@ -97,8 +95,10 @@ class ELCourseDetailViewController: ELBasicViewController {
         
     private func setupViews() {
         scrollView.delegate = self
-
         view.addSubview(scrollView)
+        navView = ELCourseDetailNavView(frame: .zero, btnBackClosure: { [weak self] in
+            self?.popViewControllerAnimated()
+        })
         view.addSubview(navView)
         scrollView.addSubview(playView)
         scrollView.addSubview(introView)
