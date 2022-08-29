@@ -10,6 +10,7 @@ import UIKit
 class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
 
     var banner: AKBannerView!
+    let bannerHeight = self.view.width/2
     
     // MARK: 销毁
     deinit {
@@ -54,7 +55,7 @@ class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
             AKBannerItem(image: "banner_2".localizedImage),
             AKBannerItem(image: "banner_3".localizedImage)
         ]
-        banner = .init(frame: CGRect.init(x: 0, y: 0, width: self.view.width, height: 300))
+        banner = .init(frame: CGRect.init(x: 0, y: -5, width: self.view.width, height: bannerHeight))
         banner.setup(
             type: BannerViewScrollType.fromStart,
             timeForOneItem: 2,
@@ -63,13 +64,19 @@ class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
         )
         
         let maskPath = UIBezierPath(roundedRect: banner.bounds, byRoundingCorners: [UIRectCorner.bottomRight, UIRectCorner.bottomLeft], cornerRadii: CGSize(width: 20, height: 20))
-
         let maskLayer = CAShapeLayer()
         maskLayer.frame = banner.bounds
         maskLayer.path = maskPath.cgPath
         banner.layer.mask = maskLayer
         
         self.view.addSubview(banner)
+    }
+    
+    func creatTopLearning()  {
+        
+        
+        
+        
     }
     private func binding() {
         
