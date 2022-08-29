@@ -27,6 +27,10 @@ class ELCourseDetailViewController: ELBasicViewController {
 
     let scrollViewBottomOffset = 25.0∥
     
+    private let navView = ELCourseDetailNavView().then() {_ in
+
+    }
+    
     private let scrollView = UIScrollView().then() {
         $0.showsVerticalScrollIndicator = false
         $0.showsHorizontalScrollIndicator = false
@@ -35,7 +39,7 @@ class ELCourseDetailViewController: ELBasicViewController {
     }
     
     private let playView = ELBasicView().then() {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .purple
         $0.addDefaultCorner()
     }
     
@@ -67,6 +71,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         super.viewDidLoad()
         setupViews()
         layout()
+        setupNoti()
     }
     
     /** 状态栏颜色 */
@@ -77,6 +82,7 @@ class ELCourseDetailViewController: ELBasicViewController {
     /** 视图即将出现 */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navView.hide()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -90,7 +96,10 @@ class ELCourseDetailViewController: ELBasicViewController {
     }
         
     private func setupViews() {
+        scrollView.delegate = self
+
         view.addSubview(scrollView)
+        view.addSubview(navView)
         scrollView.addSubview(playView)
         scrollView.addSubview(introView)
         scrollView.addSubview(processView)
@@ -99,6 +108,11 @@ class ELCourseDetailViewController: ELBasicViewController {
     }
     
     private func layout() {
+        navView.snp.makeConstraints { make in
+            make.left.top.right.equalToSuperview()
+            make.height.equalTo(NaviHeight)
+        }
+        
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -131,8 +145,21 @@ class ELCourseDetailViewController: ELBasicViewController {
         }
     }
     
+    private func setupNoti() {
+        NotificationCenter.default.addObserver(self, selector: #selector(becomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
     private func binding() {
         
     }
+    
+    @objc func becomeActive() {
+        self.navView.setAlpha(offset: scrollView.contentOffset.y)
+    }
 }
 
+extension ELCourseDetailViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        self.navView.setAlpha(offset: scrollView.contentOffset.y)
+    }
+}

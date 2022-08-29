@@ -158,7 +158,7 @@ extension UIColor {
     
     /** 主色 - xxx */
     class var mainColor : UIColor {
-        return self.colorLightDark(light: UIColor.colorWithString("#EEF1F3"), dark: UIColor.colorWithString("#EEF1F3"))
+        return UIColor.colorWithString("#EEF1F3")
     }
     
     /** 白色 - #FFFFFF */
@@ -184,6 +184,11 @@ extension UIColor {
     /** tabbar选中色 - #FFFFFF */
     class var tabbarSelectColor : UIColor {
         return UIColor.colorWithString("#007CC3")
+    }
+    
+    /** nav背景色 - #172A34 */
+    class var navBgColor : UIColor {
+        return UIColor.colorWithString("#172A34")
     }
     
     /** 标题颜色 - #040148 */

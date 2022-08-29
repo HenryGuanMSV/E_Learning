@@ -130,10 +130,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 7 images.
+  /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
     /// Image `icon／arrowDown32`.
     static let iconArrowDown32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowDown32")
+    /// Image `icon／arrowLeft32`.
+    static let iconArrowLeft32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowLeft32")
+    /// Image `icon／search32`.
+    static let iconSearch32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／search32")
     /// Image `tabbar_chat_enabled`.
     static let tabbar_chat_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_chat_enabled")
     /// Image `tabbar_chat`.
@@ -151,6 +155,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "icon／arrowDown32", bundle: ..., traitCollection: ...)`
     static func iconArrowDown32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.iconArrowDown32, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon／arrowLeft32", bundle: ..., traitCollection: ...)`
+    static func iconArrowLeft32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconArrowLeft32, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "icon／search32", bundle: ..., traitCollection: ...)`
+    static func iconSearch32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconSearch32, compatibleWith: traitCollection)
     }
     #endif
 
