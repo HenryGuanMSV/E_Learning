@@ -10,7 +10,7 @@ import UIKit
 class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
 
     var banner: AKBannerView!
-    let bannerHeight = self.view.width/2
+    var bannerHeight = 0.0
     
     // MARK: 销毁
     deinit {
@@ -28,7 +28,7 @@ class ELHomePageViewController: ELBasicViewController, BannerViewDelegate {
             return button
         }()
         view.addSubview(moreBtn)
-        
+        bannerHeight = self.view.width / 2
         layout()
         binding()
         creatBanner()
