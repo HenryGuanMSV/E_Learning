@@ -26,7 +26,6 @@ class ELCourseDetailViewController: ELBasicViewController {
     let courseListViewTopOffset = 12.0∥
 
     let scrollViewBottomOffset = 25.0∥
-
     
     private let scrollView = UIScrollView().then() {
         $0.showsVerticalScrollIndicator = false
@@ -58,7 +57,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.addDefaultShadow()
     }
     
-    private let courseListView = ELBasicView().then() {
+    private let courseListView = ELCourseContentListView().then() {
         $0.backgroundColor = .whiteColor
         $0.addDefaultCorner()
         $0.addDefaultShadow()
@@ -80,6 +79,11 @@ class ELCourseDetailViewController: ELBasicViewController {
         super.viewWillAppear(animated)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        courseListView.refreshData()
+    }
+    
     /** 视图即将移除 */
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -118,9 +122,9 @@ class ELCourseDetailViewController: ELBasicViewController {
             make.top.equalTo(processView.snp.bottom).offset(teacherViewViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
         }
+        
         courseListView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
-            make.height.equalTo(courseListViewHeight)
             make.top.equalTo(infoView.snp.bottom).offset(courseListViewTopOffset)
             make.centerX.equalTo(playView.snp.centerX)
             make.bottom.lessThanOrEqualTo(scrollView.snp.bottom).offset(-scrollViewBottomOffset)
@@ -130,5 +134,5 @@ class ELCourseDetailViewController: ELBasicViewController {
     private func binding() {
         
     }
-
 }
+

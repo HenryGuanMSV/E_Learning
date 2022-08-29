@@ -201,6 +201,11 @@ extension UIColor {
         return UIColor.colorWithString("#151641", alpha: 0.6)
     }
 
+    /** 文字选中颜色 - #007CC3 */
+    class var titleSelectedColor: UIColor {
+        return UIColor.colorWithString("#007CC3")
+    }
+    
     /** 姓名背景颜色 -  #EEDBEE */
     class var nameViewBGColor: UIColor {
         return UIColor.colorWithString("#EEDBEE")
