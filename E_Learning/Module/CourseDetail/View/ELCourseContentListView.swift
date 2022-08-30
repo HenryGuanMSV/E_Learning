@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyFitsize
 
+private let SummaryCell = "SummaryCell"
 private let CellID = "CellID"
 
 class ELCourseContentListView: ELBasicView {
@@ -22,8 +23,11 @@ class ELCourseContentListView: ELBasicView {
         $0.showsVerticalScrollIndicator = false
         $0.showsHorizontalScrollIndicator = false
         $0.register(UITableViewCell.self, forCellReuseIdentifier: CellID)
+        $0.register(ELCourseSummaryTableViewCell.self, forCellReuseIdentifier: SummaryCell)
         $0.isScrollEnabled = false
         $0.estimatedRowHeight = 0
+        $0.estimatedSectionFooterHeight = 0
+        $0.estimatedSectionHeaderHeight = 0
         $0.addDefaultCorner()
     }
     
@@ -73,7 +77,7 @@ class ELCourseContentListView: ELBasicView {
     func refreshData() {
         count = 2
         tableView.reloadData()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
             self.tableView.snp.updateConstraints { make in
                 make.height.equalTo(self.tableView.contentSize.height)
             }
@@ -109,26 +113,43 @@ extension ELCourseContentListView: UITableViewDelegate {
 
 extension ELCourseContentListView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count
+//        switch section {
+//        case 0:
+//            return 1
+//        default:
+//            return count
+//        }
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        let tableViewW = tableView.width
+        if tableViewW > 0 {
+            return tableView.fd_heightForCell(withIdentifier: SummaryCell) { cell in
+                
+            }
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellID, for: indexPath)
-        cell.selectionStyle = .none
-        switch indexPath.section {
-        case 0:
-            cell.backgroundColor = .green
-        default:
-            cell.backgroundColor = .blue
-        }
+//        switch indexPath.section {
+//        case 0:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: SummaryCell, for: indexPath) as! ELCourseSummaryTableViewCell
+//            return cell
+//        default:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: CellID, for: indexPath)
+//            cell.selectionStyle = .none
+//            cell.backgroundColor = .blue
+//            return cell
+//        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: SummaryCell, for: indexPath) as! ELCourseSummaryTableViewCell
         return cell
     }
 }

@@ -36,9 +36,10 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.contentInsetAdjustmentBehavior = .never
     }
     
-    private let playView = ELBasicView().then() {
-        $0.backgroundColor = .purple
+    private let playView = UIImageView(image: UIImage(named: "Frame 1")).then() {
         $0.addDefaultCorner()
+        $0.contentMode = .scaleAspectFill
+        $0.clipsToBounds = true
     }
     
     private let introView = ELIntroView().then() {

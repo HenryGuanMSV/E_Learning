@@ -45,6 +45,10 @@
 		0044623428A89F8C00AED895 /* ELMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044623328A89F8C00AED895 /* ELMyViewController.swift */; };
 		0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044C7142898CB3E006D5B1F /* AppDelegate.swift */; };
 		0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044C71F2898CB3F006D5B1F /* LaunchScreen.storyboard */; };
+		004DA2A228BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 004DA29C28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m */; };
+		004DA2A328BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 004DA29E28BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.m */; };
+		004DA2A428BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 004DA29F28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		004DA2A528BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 004DA2A028BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.m */; };
 		0059CC7828A614B0008DC1F1 /* ELBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC7728A614B0008DC1F1 /* ELBasicViewController.swift */; };
 		0059CC7B28A6189D008DC1F1 /* ELBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC7A28A6189D008DC1F1 /* ELBasicView.swift */; };
 		0059CC7D28A61946008DC1F1 /* ELBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC7C28A61946008DC1F1 /* ELBasicTableViewCell.swift */; };
@@ -57,6 +61,7 @@
 		008FF40628BC8ABF00D04FBF /* ELCourseContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */; };
 		008FF40828BCB1B700D04FBF /* ELCourseDetailNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */; };
 		00B7581028BC5FC4009B69E3 /* ELCourseContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */; };
+		00C23A9128BDA16200755832 /* ELCourseSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C23A9028BDA16200755832 /* ELCourseSummaryTableViewCell.swift */; };
 		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
 		00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BF28AB81A5000EDC03 /* ELIntroView.swift */; };
 		00D191C428AB92F2000EDC03 /* ELProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191C328AB92F2000EDC03 /* ELProgressView.swift */; };
@@ -109,6 +114,14 @@
 		0044C7112898CB3E006D5B1F /* E_Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0044C7142898CB3E006D5B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0044C7202898CB3F006D5B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		004DA29A28BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		004DA29B28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		004DA29C28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		004DA29D28BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		004DA29E28BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		004DA29F28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		004DA2A028BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		004DA2A128BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		0059CC7728A614B0008DC1F1 /* ELBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBasicViewController.swift; sourceTree = "<group>"; };
 		0059CC7A28A6189D008DC1F1 /* ELBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBasicView.swift; sourceTree = "<group>"; };
 		0059CC7C28A61946008DC1F1 /* ELBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELBasicTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +135,7 @@
 		008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailNavView.swift; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
 		00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseContentListView.swift; sourceTree = "<group>"; };
+		00C23A9028BDA16200755832 /* ELCourseSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailViewController.swift; sourceTree = "<group>"; };
 		00D191BF28AB81A5000EDC03 /* ELIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELIntroView.swift; sourceTree = "<group>"; };
 		00D191C328AB92F2000EDC03 /* ELProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELProgressView.swift; sourceTree = "<group>"; };
@@ -161,6 +175,7 @@
 		000BD526289A1D0B00B9100E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				004DA29928BDBD6100B1C08E /* FDTemplateLayoutCell */,
 				000BD52A289A1D0B00B9100E /* Array.swift */,
 				000BD52E289A1D0B00B9100E /* Dictionary.swift */,
 				000BD549289A1FFD00B9100E /* String.swift */,
@@ -342,6 +357,21 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		004DA29928BDBD6100B1C08E /* FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				004DA29A28BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.h */,
+				004DA29E28BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.m */,
+				004DA29D28BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.h */,
+				004DA2A028BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.m */,
+				004DA2A128BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.h */,
+				004DA29C28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m */,
+				004DA29B28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.h */,
+				004DA29F28BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = FDTemplateLayoutCell;
+			sourceTree = "<group>";
+		};
 		0059CC7528A6126B008DC1F1 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +459,7 @@
 				00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */,
 				008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */,
 				008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */,
+				00C23A9028BDA16200755832 /* ELCourseSummaryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -588,6 +619,7 @@
 			files = (
 				000BD540289A1D0B00B9100E /* UIButton.swift in Sources */,
 				001F806F28A7DB5300F8C6EF /* ELCoreManager.swift in Sources */,
+				004DA2A528BDBD6100B1C08E /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				0059CC8028A61E8D008DC1F1 /* Navigator.swift in Sources */,
 				000BD55E289A229100B9100E /* ELSystemTools.swift in Sources */,
 				278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */,
@@ -603,6 +635,7 @@
 				000BD53B289A1D0B00B9100E /* UIColor.swift in Sources */,
 				000BD542289A1D0B00B9100E /* UIViewController.swift in Sources */,
 				000BD558289A229100B9100E /* ELJsonUtil.swift in Sources */,
+				004DA2A428BDBD6100B1C08E /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				000BD55D289A229100B9100E /* ELSecretKeyUtil.swift in Sources */,
 				0059CC8228A61FE3008DC1F1 /* ELRootTabbarController.swift in Sources */,
 				0044623428A89F8C00AED895 /* ELMyViewController.swift in Sources */,
@@ -614,14 +647,17 @@
 				001F805C28A77B8200F8C6EF /* ELNetAPI.swift in Sources */,
 				0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */,
 				0043F64028A6439500B567AA /* ELDataParseReqPlugin.swift in Sources */,
+				004DA2A328BDBD6100B1C08E /* UITableView+FDKeyedHeightCache.m in Sources */,
 				000BD54A289A1FFD00B9100E /* String.swift in Sources */,
 				000BD53C289A1D0B00B9100E /* UINavigationItem.swift in Sources */,
 				000BD548289A1EFA00B9100E /* Global.swift in Sources */,
+				004DA2A228BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */,
 				000BD546289A1D0B00B9100E /* UIAlertController.swift in Sources */,
 				000BD53A289A1D0B00B9100E /* Array.swift in Sources */,
 				000BD561289A229100B9100E /* ELNotificationKeyUtil.swift in Sources */,
 				0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */,
+				00C23A9128BDA16200755832 /* ELCourseSummaryTableViewCell.swift in Sources */,
 				000BD55C289A229100B9100E /* UIScrollView+RxSwift.swift in Sources */,
 				000BD545289A1D0B00B9100E /* UILabel.swift in Sources */,
 				278321E428B4B2E000309F55 /* ELCourseInfoView.swift in Sources */,

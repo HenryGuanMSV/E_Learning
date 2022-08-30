@@ -15,4 +15,6 @@
 // 刷新
 #import "MJRefresh.h"
 
+// cell
+#import "UITableView+FDTemplateLayoutCell.h"
 #endif /* E_Learning_Bridging_Header_h */
