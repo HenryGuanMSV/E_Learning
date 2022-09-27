@@ -9,7 +9,7 @@ import UIKit
 import SwiftyFitsize
 
 private let SummaryCell = "SummaryCell"
-private let CellID = "CellID"
+private let ContentCell = "ContentCell"
 
 class ELCourseContentListView: ELBasicView {
     
@@ -22,8 +22,8 @@ class ELCourseContentListView: ELBasicView {
         $0.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
         $0.showsVerticalScrollIndicator = false
         $0.showsHorizontalScrollIndicator = false
-        $0.register(UITableViewCell.self, forCellReuseIdentifier: CellID)
         $0.register(ELCourseSummaryTableViewCell.self, forCellReuseIdentifier: SummaryCell)
+        $0.register(ELContentView.self, forCellReuseIdentifier: ContentCell)
         $0.isScrollEnabled = false
         $0.estimatedRowHeight = 0
         $0.estimatedSectionFooterHeight = 0
@@ -113,7 +113,7 @@ extension ELCourseContentListView: UITableViewDelegate {
 
 extension ELCourseContentListView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -127,14 +127,28 @@ extension ELCourseContentListView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let tableViewW = tableView.width
-        if tableViewW > 0 {
-            return tableView.fd_heightForCell(withIdentifier: SummaryCell) { cell in
-                
+        if indexPath.section == 0 {
+            let tableViewW = tableView.width
+            if tableViewW > 0 {
+                return tableView.fd_heightForCell(withIdentifier: SummaryCell) { cell in
+                    
+                }
+            } else {
+                return 0
             }
-        } else {
-            return 0
         }
+        
+        if indexPath.section == 1 {
+            let tableViewW = tableView.width
+            if tableViewW > 0 {
+                return tableView.fd_heightForCell(withIdentifier: ContentCell) { cell in
+                    
+                }
+            } else {
+                return 0
+            }
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -148,9 +162,14 @@ extension ELCourseContentListView: UITableViewDataSource {
 //            cell.backgroundColor = .blue
 //            return cell
 //        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: SummaryCell, for: indexPath) as! ELCourseSummaryTableViewCell
-        return cell
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SummaryCell, for: indexPath) as! ELCourseSummaryTableViewCell
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: ContentCell, for: indexPath) as! ELContentView
+            return cell
+        }
     }
 }
 
