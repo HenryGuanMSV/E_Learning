@@ -76,6 +76,9 @@ let COURSE_CONTENT_LIST_TITLE_3 = "Discuss"
 let SUMMARY_TIPS = "您将学到什么"
 let SUMMARY_SUB_TIPS = "您将获得的技能"
 
+/** Content Tips */
+let Content_TIPS = "Content"
+
 /** tabbar标题 */
 let HOME_TABBAR_NAME = "Home"
 let COURSE_TABBAR_NAME = "Course"

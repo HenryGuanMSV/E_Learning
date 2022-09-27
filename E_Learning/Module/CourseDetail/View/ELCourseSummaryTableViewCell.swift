@@ -17,6 +17,12 @@ class ELCourseSummaryTableViewCell: ELBasicTableViewCell {
     let subLabelTop = 24.0∥
     let subLabelBottom = 35.0∥
     
+    let flagLabelWidth = 48.0≈
+    let flagLabelHeight = 16.0∥
+    let flagLabelLeft = 12.0≈
+    let flagLabelTop = 9.0∥
+    let flagLabelBottom = 48.0∥
+    
     private let titleLabel = UILabel().then() {
         $0.backgroundColor = .clear
         $0.numberOfLines = 0
@@ -42,6 +48,10 @@ class ELCourseSummaryTableViewCell: ELBasicTableViewCell {
         $0.text = SUMMARY_SUB_TIPS
     }
     
+    private let flagLabel = ELCourseLabel().then() {_ in
+    }
+
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
@@ -59,6 +69,7 @@ class ELCourseSummaryTableViewCell: ELBasicTableViewCell {
         contentView.addSubview(titleLabel)
         contentView.addSubview(contentLabel)
         contentView.addSubview(subLabel)
+        contentView.addSubview(flagLabel)
     }
     
     private func layout() {
@@ -79,6 +90,14 @@ class ELCourseSummaryTableViewCell: ELBasicTableViewCell {
             make.top.equalTo(contentLabel.snp.bottom).offset(subLabelTop)
             make.right.lessThanOrEqualTo(contentView.snp.right).offset(-titleLeft)
             make.bottom.equalTo(contentView.snp.bottom).offset(-subLabelBottom).priority(.high)
+        }
+        
+        flagLabel.snp.makeConstraints { make in
+            make.width.equalTo(flagLabelWidth)
+            make.height.equalTo(flagLabelHeight)
+            make.left.equalToSuperview().offset(flagLabelLeft)
+            make.top.equalTo(subLabel.snp.bottom).offset(flagLabelTop)
+            make.bottom.equalToSuperview().offset(-flagLabelBottom)
         }
     } 
 }

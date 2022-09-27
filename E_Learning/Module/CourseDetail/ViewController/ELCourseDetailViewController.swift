@@ -66,6 +66,12 @@ class ELCourseDetailViewController: ELBasicViewController {
         $0.addDefaultShadow()
     }
     
+    // ELContentView
+    private let contentView = ELContentView().then() {
+        $0.backgroundColor = .whiteColor
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -106,6 +112,7 @@ class ELCourseDetailViewController: ELBasicViewController {
         scrollView.addSubview(processView)
         scrollView.addSubview(infoView)
         scrollView.addSubview(courseListView)
+        scrollView.addSubview(contentView)
     }
     
     private func layout() {
@@ -141,6 +148,12 @@ class ELCourseDetailViewController: ELBasicViewController {
         courseListView.snp.makeConstraints { make in
             make.width.equalTo(introView.snp.width)
             make.top.equalTo(infoView.snp.bottom).offset(courseListViewTopOffset)
+            make.centerX.equalTo(playView.snp.centerX)            
+        }
+        
+        contentView.snp.makeConstraints { make in
+            make.width.equalTo(introView.snp.width)
+            make.top.equalTo(courseListView.snp.bottom)
             make.centerX.equalTo(playView.snp.centerX)
             make.bottom.lessThanOrEqualTo(scrollView.snp.bottom).offset(-scrollViewBottomOffset)
         }

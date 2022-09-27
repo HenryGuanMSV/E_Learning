@@ -27,7 +27,7 @@ class ELCourseContentHeaderView: ELBasicView {
         $0.backgroundColor = .clear
         $0.numberOfLines = 0
         $0.font = UIFont.pingFangRegular(12.0)
-        $0.textColor = UIColor.titleSelectedColor
+        $0.textColor = UIColor.tabbarSelectColor
         $0.text = COURSE_CONTENT_LIST_TITLE_1
         $0.isUserInteractionEnabled = true
     }
@@ -109,7 +109,7 @@ class ELCourseContentHeaderView: ELBasicView {
             return
         }
         
-        firstLabel.textColor = UIColor.titleSelectedColor
+        firstLabel.textColor = UIColor.tabbarSelectColor
         middleLabel.textColor = UIColor.titleColor
         rightLabel.textColor = UIColor.titleColor
         currentIndex = 0
@@ -122,7 +122,7 @@ class ELCourseContentHeaderView: ELBasicView {
         }
         
         firstLabel.textColor = UIColor.titleColor
-        middleLabel.textColor = UIColor.titleSelectedColor
+        middleLabel.textColor = UIColor.tabbarSelectColor
         rightLabel.textColor = UIColor.titleColor
         currentIndex = 1
         middleClickClosure()
@@ -135,7 +135,7 @@ class ELCourseContentHeaderView: ELBasicView {
         
         firstLabel.textColor = UIColor.titleColor
         middleLabel.textColor = UIColor.titleColor
-        rightLabel.textColor = UIColor.titleSelectedColor
+        rightLabel.textColor = UIColor.tabbarSelectColor
         currentIndex = 2
         rightClickClosure()
     }
