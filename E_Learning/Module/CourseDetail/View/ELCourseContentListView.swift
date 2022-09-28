@@ -10,13 +10,15 @@ import SwiftyFitsize
 
 private let SummaryCell = "SummaryCell"
 private let ContentCell = "ContentCell"
+private let DiscussHeader = "DiscussHeader"
+private let DiscussContent = "DiscussContent"
 
 class ELCourseContentListView: ELBasicView {
     
     var count = 0
 
     var headerView: ELCourseContentHeaderView!
-    private let tableView = UITableView(frame: .zero, style: .plain).then() {
+    private let tableView = UITableView(frame: .zero, style: .grouped).then() {
         $0.separatorStyle = UITableViewCell.SeparatorStyle.none
         $0.backgroundColor = .clear
         $0.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
@@ -24,6 +26,9 @@ class ELCourseContentListView: ELBasicView {
         $0.showsHorizontalScrollIndicator = false
         $0.register(ELCourseSummaryTableViewCell.self, forCellReuseIdentifier: SummaryCell)
         $0.register(ELContentView.self, forCellReuseIdentifier: ContentCell)
+        $0.register(ELDiscussContentCell.self, forCellReuseIdentifier: DiscussContent)
+        $0.register(ELContentEditHeaderView.self, forHeaderFooterViewReuseIdentifier: DiscussHeader)
+        
         $0.isScrollEnabled = false
         $0.estimatedRowHeight = 0
         $0.estimatedSectionFooterHeight = 0
@@ -113,7 +118,7 @@ extension ELCourseContentListView: UITableViewDelegate {
 
 extension ELCourseContentListView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -123,7 +128,15 @@ extension ELCourseContentListView: UITableViewDataSource {
 //        default:
 //            return count
 //        }
-        return 1
+        
+        switch section {
+        case 0:
+            return 1
+        case 1:
+            return 1
+        default:
+            return 3
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -148,6 +161,19 @@ extension ELCourseContentListView: UITableViewDataSource {
                 return 0
             }
         }
+        
+        if indexPath.section == 2 {
+            let tableViewW = tableView.width
+            if tableViewW > 0 {
+                return tableView.fd_heightForCell(withIdentifier: DiscussContent) { cell in
+                    
+                }
+            } else {
+                return 0
+            }
+        }
+
+        
         return 0
     }
     
@@ -166,10 +192,36 @@ extension ELCourseContentListView: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: SummaryCell, for: indexPath) as! ELCourseSummaryTableViewCell
             return cell
-        default:
+        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: ContentCell, for: indexPath) as! ELContentView
             return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: DiscussContent, for: indexPath) as! ELDiscussContentCell
+            return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 2 {
+            let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: DiscussHeader) as! ELContentEditHeaderView
+            return header
+        }
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 2 {
+            return 165.0
+        }
+        return 0.01;
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01;
     }
 }
 

@@ -130,8 +130,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 12 images.
+  /// This `R.image` struct is generated, and contains static references to 14 images.
   struct image {
+    /// Image `Bars／icon／starSpace`.
+    static let barsIconStarSpace = Rswift.ImageResource(bundle: R.hostingBundle, name: "Bars／icon／starSpace")
     /// Image `Frame 1`.
     static let frame1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Frame 1")
     /// Image `icon／arrowDown32`.
@@ -156,6 +158,15 @@ struct R: Rswift.Validatable {
     static let tabbar_me_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me_enabled")
     /// Image `tabbar_me`.
     static let tabbar_me = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me")
+    /// Image `yellowStar`.
+    static let yellowStar = Rswift.ImageResource(bundle: R.hostingBundle, name: "yellowStar")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Bars／icon／starSpace", bundle: ..., traitCollection: ...)`
+    static func barsIconStarSpace(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.barsIconStarSpace, compatibleWith: traitCollection)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Frame 1", bundle: ..., traitCollection: ...)`
@@ -238,6 +249,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "tabbar_me_enabled", bundle: ..., traitCollection: ...)`
     static func tabbar_me_enabled(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.tabbar_me_enabled, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "yellowStar", bundle: ..., traitCollection: ...)`
+    static func yellowStar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.yellowStar, compatibleWith: traitCollection)
     }
     #endif
 

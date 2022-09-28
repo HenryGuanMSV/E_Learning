@@ -79,6 +79,9 @@ let SUMMARY_SUB_TIPS = "您将获得的技能"
 /** Content Tips */
 let Content_TIPS = "Content"
 
+/** Discuss Tips */
+let Discuss_TIPS = "Discuss"
+
 /** tabbar标题 */
 let HOME_TABBAR_NAME = "Home"
 let COURSE_TABBAR_NAME = "Course"

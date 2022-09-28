@@ -42,7 +42,8 @@ target 'E_Learning' do
   pod 'CryptoSwift', '1.5.1'
   #打印log
   pod 'XCGLogger', '7.0.1'
-  
+  #TextView
+  pod 'RSKPlaceholderTextView', '~> 6.1.0'
   
   # oc的库
   # 图片缓存库
