@@ -12,11 +12,16 @@ import UIKit
 
 extension Navigator {
     
-    
-    
     static func nav2TestVC(_ nav:RTRootNavigationController? = nil) {
         let controller       = ELCourseDetailViewController()
         controller.title     = "课程详情"
+        let rootNavc = (nav ?? rootNavigationController)
+        rootNavc?.pushViewController(controller, animated: true)
+    }
+    
+    static func nav2IntroVC(_ nav:RTRootNavigationController? = nil) {
+        let controller       = ELUserIntroViewController()
+        controller.title     = ""
         let rootNavc = (nav ?? rootNavigationController)
         rootNavc?.pushViewController(controller, animated: true)
     }

@@ -60,6 +60,7 @@
 		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
 		008FF40628BC8ABF00D04FBF /* ELCourseContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */; };
 		008FF40828BCB1B700D04FBF /* ELCourseDetailNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */; };
+		00ABBF69290A0B900052B462 /* ELUserIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABBF68290A0B900052B462 /* ELUserIntroViewController.swift */; };
 		00B7581028BC5FC4009B69E3 /* ELCourseContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */; };
 		00C23A9128BDA16200755832 /* ELCourseSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C23A9028BDA16200755832 /* ELCourseSummaryTableViewCell.swift */; };
 		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
@@ -140,6 +141,7 @@
 		008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseContentHeaderView.swift; sourceTree = "<group>"; };
 		008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailNavView.swift; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
+		00ABBF68290A0B900052B462 /* ELUserIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELUserIntroViewController.swift; sourceTree = "<group>"; };
 		00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseContentListView.swift; sourceTree = "<group>"; };
 		00C23A9028BDA16200755832 /* ELCourseSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				0044623328A89F8C00AED895 /* ELMyViewController.swift */,
+				00ABBF68290A0B900052B462 /* ELUserIntroViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				00F5375928E3E94A00DB7E0E /* StarEvaluateView.swift in Sources */,
 				00F5375728E3E6FF00DB7E0E /* ELContentEditHeaderView.swift in Sources */,
 				0059CC7D28A61946008DC1F1 /* ELBasicTableViewCell.swift in Sources */,
+				00ABBF69290A0B900052B462 /* ELUserIntroViewController.swift in Sources */,
 				000BD55B289A229100B9100E /* MJRefresh+RxSwift.swift in Sources */,
 				000BD55F289A229100B9100E /* ELCheckUtil.swift in Sources */,
 			);
