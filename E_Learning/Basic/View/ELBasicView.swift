@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ELBasicView: UIView {
 
     /** 自定义view */
@@ -19,4 +20,5 @@ class ELBasicView: UIView {
         let loadName = nibname == nil ? "\(Self.self)" : nibname!
         return Bundle.main.loadNibNamed(loadName, owner: nil, options: nil)![index] as! Self
     }
+    
 }

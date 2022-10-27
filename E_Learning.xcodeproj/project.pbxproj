@@ -54,6 +54,17 @@
 		0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059CC8828A623EA008DC1F1 /* ELProgressHUD.swift */; };
 		0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AC28A9ED25005874D8 /* R.generated.swift */; };
 		0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */; };
+		008FF40628BC8ABF00D04FBF /* ELCourseContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */; };
+		008FF40828BCB1B700D04FBF /* ELCourseDetailNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */; };
+		00B7581028BC5FC4009B69E3 /* ELCourseContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */; };
+		00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */; };
+		00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191BF28AB81A5000EDC03 /* ELIntroView.swift */; };
+		00D191C428AB92F2000EDC03 /* ELProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D191C328AB92F2000EDC03 /* ELProgressView.swift */; };
+		278321E228B4ADB500309F55 /* RCGradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E128B4ADB500309F55 /* RCGradientProgressView.swift */; };
+		278321E428B4B2E000309F55 /* ELCourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E328B4B2E000309F55 /* ELCourseInfoView.swift */; };
+		278321E628B4B3B800309F55 /* ELNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E528B4B3B800309F55 /* ELNameView.swift */; };
+		278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */; };
+		27CFE68D28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
 		FBA43C2D28B8B50B00933EE3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA43C2C28B8B50B00933EE3 /* UIApplication.swift */; };
 		FBA43C2F28B8C3B900933EE3 /* localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA43C2E28B8C3B900933EE3 /* localizable.swift */; };
@@ -115,9 +126,20 @@
 		0059CC8828A623EA008DC1F1 /* ELProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELProgressHUD.swift; sourceTree = "<group>"; };
 		0063F1AC28A9ED25005874D8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		0063F1AE28A9F8EE005874D8 /* Navigator+Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator+Home.swift"; sourceTree = "<group>"; };
+		008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseContentHeaderView.swift; sourceTree = "<group>"; };
+		008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailNavView.swift; sourceTree = "<group>"; };
 		00A64AA82898F4E1008F970F /* E_Learning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E_Learning-Bridging-Header.h"; sourceTree = "<group>"; };
+		00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseContentListView.swift; sourceTree = "<group>"; };
+		00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseDetailViewController.swift; sourceTree = "<group>"; };
+		00D191BF28AB81A5000EDC03 /* ELIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELIntroView.swift; sourceTree = "<group>"; };
+		00D191C328AB92F2000EDC03 /* ELProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELProgressView.swift; sourceTree = "<group>"; };
 		0951055AA81821098722831E /* Pods-E_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.release.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.release.xcconfig"; sourceTree = "<group>"; };
 		0D34EE85846E409B9E3E1654 /* Pods-E_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Learning.debug.xcconfig"; path = "Target Support Files/Pods-E_Learning/Pods-E_Learning.debug.xcconfig"; sourceTree = "<group>"; };
+		278321E128B4ADB500309F55 /* RCGradientProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCGradientProgressView.swift; sourceTree = "<group>"; };
+		278321E328B4B2E000309F55 /* ELCourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoView.swift; sourceTree = "<group>"; };
+		278321E528B4B3B800309F55 /* ELNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELNameView.swift; sourceTree = "<group>"; };
+		278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoContentView.swift; sourceTree = "<group>"; };
+		27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoTitleView.swift; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA43C2C28B8B50B00933EE3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		FBA43C2E28B8C3B900933EE3 /* localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = localizable.swift; sourceTree = "<group>"; };
@@ -231,6 +253,7 @@
 		001F805D28A7D88C00F8C6EF /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				00D191B828AB61D0000EDC03 /* CourseDetail */,
 				001F806828A7D9BB00F8C6EF /* My */,
 				001F806328A7D99800F8C6EF /* Course */,
 				001F805E28A7D97200F8C6EF /* Home */,
@@ -241,9 +264,6 @@
 		001F805E28A7D97200F8C6EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				001F806228A7D99200F8C6EF /* Model */,
-				001F806128A7D98C00F8C6EF /* ViewModel */,
-				001F806028A7D98500F8C6EF /* View */,
 				001F805F28A7D97900F8C6EF /* ViewController */,
 			);
 			path = Home;
@@ -257,33 +277,9 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		001F806028A7D98500F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806128A7D98C00F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		001F806228A7D99200F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		001F806328A7D99800F8C6EF /* Course */ = {
 			isa = PBXGroup;
 			children = (
-				001F806628A7D9A800F8C6EF /* Model */,
-				001F806728A7D9AF00F8C6EF /* ViewModel */,
-				001F806528A7D9A400F8C6EF /* View */,
 				001F806428A7D99D00F8C6EF /* ViewController */,
 			);
 			path = Course;
@@ -297,33 +293,9 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		001F806528A7D9A400F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806628A7D9A800F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		001F806728A7D9AF00F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		001F806828A7D9BB00F8C6EF /* My */ = {
 			isa = PBXGroup;
 			children = (
-				001F806B28A7D9CD00F8C6EF /* Model */,
-				001F806C28A7D9D200F8C6EF /* ViewModel */,
-				001F806A28A7D9C600F8C6EF /* View */,
 				001F806928A7D9C000F8C6EF /* ViewController */,
 			);
 			path = My;
@@ -335,27 +307,6 @@
 				0044623328A89F8C00AED895 /* ELMyViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		001F806A28A7D9C600F8C6EF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		001F806B28A7D9CD00F8C6EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		001F806C28A7D9D200F8C6EF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		001F806D28A7DA4300F8C6EF /* Manages */ = {
@@ -465,6 +416,40 @@
 				0059CC8628A622EF008DC1F1 /* ELCheckNetwork.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		00D191B828AB61D0000EDC03 /* CourseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				00D191BA28AB61F7000EDC03 /* View */,
+				00D191B928AB61EF000EDC03 /* ViewController */,
+			);
+			path = CourseDetail;
+			sourceTree = "<group>";
+		};
+		00D191B928AB61EF000EDC03 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00D191BD28AB6228000EDC03 /* ELCourseDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		00D191BA28AB61F7000EDC03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00D191BF28AB81A5000EDC03 /* ELIntroView.swift */,
+				00D191C328AB92F2000EDC03 /* ELProgressView.swift */,
+				278321E128B4ADB500309F55 /* RCGradientProgressView.swift */,
+				278321E328B4B2E000309F55 /* ELCourseInfoView.swift */,
+				278321E528B4B3B800309F55 /* ELNameView.swift */,
+				27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */,
+				278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */,
+				00B7580F28BC5FC4009B69E3 /* ELCourseContentListView.swift */,
+				008FF40528BC8ABF00D04FBF /* ELCourseContentHeaderView.swift */,
+				008FF40728BCB1B700D04FBF /* ELCourseDetailNavView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1102D3B31C69B05D923657BE /* Pods */ = {
@@ -638,11 +623,19 @@
 				001F806F28A7DB5300F8C6EF /* ELCoreManager.swift in Sources */,
 				0059CC8028A61E8D008DC1F1 /* Navigator.swift in Sources */,
 				000BD55E289A229100B9100E /* ELSystemTools.swift in Sources */,
+				278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */,
 				000BD566289A23D200B9100E /* SuperOB.swift in Sources */,
+				00D191BE28AB6228000EDC03 /* ELCourseDetailViewController.swift in Sources */,
+				008FF40628BC8ABF00D04FBF /* ELCourseContentHeaderView.swift in Sources */,
 				0059CC8728A622EF008DC1F1 /* ELCheckNetwork.swift in Sources */,
 				000BD539289A1D0B00B9100E /* UIView.swift in Sources */,
 				000BD562289A229100B9100E /* ELImageUtil.swift in Sources */,
+<<<<<<< HEAD
 				FBC5A74028B74949009E3FED /* AKBannerCollectionCell.swift in Sources */,
+=======
+				008FF40828BCB1B700D04FBF /* ELCourseDetailNavView.swift in Sources */,
+				278321E228B4ADB500309F55 /* RCGradientProgressView.swift in Sources */,
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
 				0044623228A89F5E00AED895 /* ELCourseViewController.swift in Sources */,
 				000BD53B289A1D0B00B9100E /* UIColor.swift in Sources */,
 				000BD542289A1D0B00B9100E /* UIViewController.swift in Sources */,
@@ -650,8 +643,11 @@
 				000BD55D289A229100B9100E /* ELSecretKeyUtil.swift in Sources */,
 				0059CC8228A61FE3008DC1F1 /* ELRootTabbarController.swift in Sources */,
 				0044623428A89F8C00AED895 /* ELMyViewController.swift in Sources */,
+				00D191C428AB92F2000EDC03 /* ELProgressView.swift in Sources */,
 				000BD559289A229100B9100E /* ELDarkModeUtil.swift in Sources */,
 				000BD537289A1D0B00B9100E /* CALayer.swift in Sources */,
+				278321E628B4B3B800309F55 /* ELNameView.swift in Sources */,
+				00D191C028AB81A5000EDC03 /* ELIntroView.swift in Sources */,
 				001F805C28A77B8200F8C6EF /* ELNetAPI.swift in Sources */,
 				0059CC8928A623EA008DC1F1 /* ELProgressHUD.swift in Sources */,
 				0043F64028A6439500B567AA /* ELDataParseReqPlugin.swift in Sources */,
@@ -669,10 +665,12 @@
 				0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */,
 				000BD55C289A229100B9100E /* UIScrollView+RxSwift.swift in Sources */,
 				000BD545289A1D0B00B9100E /* UILabel.swift in Sources */,
+				278321E428B4B2E000309F55 /* ELCourseInfoView.swift in Sources */,
 				0059CC7828A614B0008DC1F1 /* ELBasicViewController.swift in Sources */,
 				000BD53E289A1D0B00B9100E /* Dictionary.swift in Sources */,
 				0063F1AD28A9ED25005874D8 /* R.generated.swift in Sources */,
 				000BD538289A1D0B00B9100E /* Date.swift in Sources */,
+				27CFE68D28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift in Sources */,
 				000BD544289A1D0B00B9100E /* UIFont.swift in Sources */,
 				001F805A28A77A3200F8C6EF /* ELAPIClient.swift in Sources */,
 				0044623028A89D7900AED895 /* ELHomePageViewController.swift in Sources */,
@@ -683,6 +681,7 @@
 				FBC5A73D28B74949009E3FED /* AKBannerView.swift in Sources */,
 				000BD560289A229100B9100E /* ELStringUtil.swift in Sources */,
 				000BD53D289A1D0B00B9100E /* UITableView.swift in Sources */,
+				00B7581028BC5FC4009B69E3 /* ELCourseContentListView.swift in Sources */,
 				0059CC7D28A61946008DC1F1 /* ELBasicTableViewCell.swift in Sources */,
 				000BD55B289A229100B9100E /* MJRefresh+RxSwift.swift in Sources */,
 				000BD55F289A229100B9100E /* ELCheckUtil.swift in Sources */,

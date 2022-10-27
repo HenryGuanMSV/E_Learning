@@ -158,12 +158,22 @@ extension UIColor {
     
     /** 主色 - xxx */
     class var mainColor : UIColor {
-        return self.colorLightDark(light: UIColor.white, dark: UIColor.colorWithString("#282828"))
+        return UIColor.colorWithString("#EEF1F3")
     }
     
     /** 白色 - #FFFFFF */
     class var whiteColor : UIColor {
         return UIColor.colorWithString("#FFFFFF")
+    }
+    
+    /** 阴影黑色 - #000000 */
+    class var shadowColor : UIColor {
+        return UIColor.colorWithString("#000000", alpha: 0.1)
+    }
+    
+    /** 灰色 - #E4E7E8 */
+    class var grayColor : UIColor {
+        return UIColor.colorWithString("#E4E7E8")
     }
     
     /** tabbar背景色 - #FFFFFF */
@@ -176,7 +186,42 @@ extension UIColor {
         return UIColor.colorWithString("#007CC3")
     }
     
+    /** nav背景色 - #172A34 */
+    class var navBgColor : UIColor {
+        return UIColor.colorWithString("#172A34")
+    }
+    
+    /** 标题颜色 - #040148 */
+    class var titleColor: UIColor {
+        return UIColor.colorWithString("#040148")
+    }
 
+    /** 副标题颜色 - #151641 */
+    class var subTitleColor: UIColor {
+        return UIColor.colorWithString("#151641")
+    }
+
+    /** 半透明副标题颜色 - #151641 */
+    class var subTitleAlphaColor: UIColor {
+        return UIColor.colorWithString("#151641", alpha: 0.6)
+    }
+
+    /** 文字选中颜色 - #007CC3 */
+    class var titleSelectedColor: UIColor {
+        return UIColor.colorWithString("#007CC3")
+    }
+    
+    /** 姓名背景颜色 -  #EEDBEE */
+    class var nameViewBGColor: UIColor {
+        return UIColor.colorWithString("#EEDBEE")
+    }
+
+    /** 半透明背景颜色 */
+    class var nameContentViewBGColor: UIColor {
+        return UIColor.colorWithString("#EEF1F3", alpha: 0.8)
+    }
+
+    
     class var naviColor : UIColor {
         let config = NaviBarConfig()
         let naviColorLight = UIColor.bm_colorGradient(size: config.size, colors: config.colors, points: config.points, locations: config.locations)

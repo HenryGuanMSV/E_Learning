@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyFitsize
 
 extension UIView {
     func removeAllSubviews() {
@@ -50,6 +51,7 @@ extension UIView {
         self.layer.mask = maskLayer
     }
     
+<<<<<<< HEAD
     func addConstraintsAlignedToSuperview(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -99,6 +101,20 @@ extension UIView {
         )
     }
     
+=======
+    // 添加圆角
+     func addDefaultCorner() {
+         self.layer.cornerRadius = 8≈
+     }
+     
+     // 添加阴影
+     func addDefaultShadow() {
+         self.layer.shadowOffset = CGSize(width: 0, height: 0)
+         self.layer.shadowOpacity = 1
+         self.layer.shadowRadius = 60≈
+         self.layer.shadowColor = UIColor.shadowColor.cgColor
+     }
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
 }
 
 protocol NibLoadable {}

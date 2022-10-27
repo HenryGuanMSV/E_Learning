@@ -132,12 +132,21 @@ struct R: Rswift.Validatable {
 
   /// This `R.image` struct is generated, and contains static references to 9 images.
   struct image {
+<<<<<<< HEAD
     /// Image `banner_1`.
     static let banner_1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_1")
     /// Image `banner_2`.
     static let banner_2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_2")
     /// Image `banner_3`.
     static let banner_3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "banner_3")
+=======
+    /// Image `icon／arrowDown32`.
+    static let iconArrowDown32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowDown32")
+    /// Image `icon／arrowLeft32`.
+    static let iconArrowLeft32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowLeft32")
+    /// Image `icon／search32`.
+    static let iconSearch32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／search32")
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
     /// Image `tabbar_chat_enabled`.
     static let tabbar_chat_enabled = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_chat_enabled")
     /// Image `tabbar_chat`.
@@ -152,23 +161,41 @@ struct R: Rswift.Validatable {
     static let tabbar_me = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabbar_me")
 
     #if os(iOS) || os(tvOS)
+<<<<<<< HEAD
     /// `UIImage(named: "banner_1", bundle: ..., traitCollection: ...)`
     static func banner_1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.banner_1, compatibleWith: traitCollection)
+=======
+    /// `UIImage(named: "icon／arrowDown32", bundle: ..., traitCollection: ...)`
+    static func iconArrowDown32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconArrowDown32, compatibleWith: traitCollection)
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
     }
     #endif
 
     #if os(iOS) || os(tvOS)
+<<<<<<< HEAD
     /// `UIImage(named: "banner_2", bundle: ..., traitCollection: ...)`
     static func banner_2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.banner_2, compatibleWith: traitCollection)
+=======
+    /// `UIImage(named: "icon／arrowLeft32", bundle: ..., traitCollection: ...)`
+    static func iconArrowLeft32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconArrowLeft32, compatibleWith: traitCollection)
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
     }
     #endif
 
     #if os(iOS) || os(tvOS)
+<<<<<<< HEAD
     /// `UIImage(named: "banner_3", bundle: ..., traitCollection: ...)`
     static func banner_3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.banner_3, compatibleWith: traitCollection)
+=======
+    /// `UIImage(named: "icon／search32", bundle: ..., traitCollection: ...)`
+    static func iconSearch32(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.iconSearch32, compatibleWith: traitCollection)
+>>>>>>> 8c2773483aee4770db08929f577a741c9b7abdaf
     }
     #endif
 

@@ -58,6 +58,20 @@ func scaleNum(_ w:CGFloat) -> CGFloat {
 /** 文本提示 */
 let NETWORK_ANOMALIES = "网络异常，请重新请求"
 
+/** 课程详情提示 */
+let INTRO_START_BUTTON = "Start"
+let PROGREE_VIEW_TITLE = "Learning Progress"
+let PROGREE_STATUS_TITLE = "Status: Started"
+
+/** 课程信息提示 */
+let COURSE_INFO_TITLE = "Curator / Contacts"
+let COURSE_INFO_CONTENT_TITLE = "Course Information"
+
+/** 课程列表标题提示 */
+let COURSE_CONTENT_LIST_TITLE_1 = "Summary"
+let COURSE_CONTENT_LIST_TITLE_2 = "Content"
+let COURSE_CONTENT_LIST_TITLE_3 = "Discuss"
+
 /** tabbar标题 */
 let HOME_TABBAR_NAME = "Home"
 let COURSE_TABBAR_NAME = "Course"
