@@ -16,7 +16,7 @@ class ELCourseViewController: ELBasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .black
         layout()
         binding()
     }
@@ -24,6 +24,8 @@ class ELCourseViewController: ELBasicViewController {
     /** 视图即将出现 */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        view.backgroundColor = .blue
+        
     }
 
     /** 视图即将移除 */
@@ -36,6 +38,6 @@ class ELCourseViewController: ELBasicViewController {
     }
     
     private func binding() {
-        
+        view.backgroundColor = .black
     }
 }
