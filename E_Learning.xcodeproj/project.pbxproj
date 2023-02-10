@@ -79,6 +79,10 @@
 		278321E828B4C51100309F55 /* ELCourseInfoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */; };
 		27CFE68D28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */; };
 		B2F282ABC4956D505FFE72E5 /* Pods_E_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */; };
+		FB7BA0AC298BBC600063FC44 /* ELCourseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BA0AB298BBC5F0063FC44 /* ELCourseViewController.storyboard */; };
+		FB7BA0AF299097B20063FC44 /* MenuListNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BA0AE299097B20063FC44 /* MenuListNameCell.swift */; };
+		FB7BA0B1299097D50063FC44 /* MenuDataListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BA0B0299097D50063FC44 /* MenuDataListCell.swift */; };
+		FB7BA0B4299104B30063FC44 /* ELCourseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BA0B3299104B30063FC44 /* ELCourseMenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +167,10 @@
 		278321E728B4C51100309F55 /* ELCourseInfoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoContentView.swift; sourceTree = "<group>"; };
 		27CFE68C28B4CA2500B9ADC5 /* ELCourseInfoTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseInfoTitleView.swift; sourceTree = "<group>"; };
 		EE9B10A552CD2241A281CA78 /* Pods_E_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7BA0AB298BBC5F0063FC44 /* ELCourseViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ELCourseViewController.storyboard; sourceTree = "<group>"; };
+		FB7BA0AE299097B20063FC44 /* MenuListNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListNameCell.swift; sourceTree = "<group>"; };
+		FB7BA0B0299097D50063FC44 /* MenuDataListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataListCell.swift; sourceTree = "<group>"; };
+		FB7BA0B3299104B30063FC44 /* ELCourseMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCourseMenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +300,8 @@
 		001F806328A7D99800F8C6EF /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				FB7BA0B22990A2C00063FC44 /* Model */,
+				FB7BA0AD299096500063FC44 /* View */,
 				001F806428A7D99D00F8C6EF /* ViewController */,
 			);
 			path = Course;
@@ -300,6 +310,7 @@
 		001F806428A7D99D00F8C6EF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FB7BA0AB298BBC5F0063FC44 /* ELCourseViewController.storyboard */,
 				0044623128A89F5E00AED895 /* ELCourseViewController.swift */,
 			);
 			path = ViewController;
@@ -505,6 +516,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB7BA0AD299096500063FC44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BA0AE299097B20063FC44 /* MenuListNameCell.swift */,
+				FB7BA0B0299097D50063FC44 /* MenuDataListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB7BA0B22990A2C00063FC44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BA0B3299104B30063FC44 /* ELCourseMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +595,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7BA0AC298BBC600063FC44 /* ELCourseViewController.storyboard in Resources */,
 				0044C7212898CB3F006D5B1F /* LaunchScreen.storyboard in Resources */,
 				001F437C2898CDB900324FDB /* Assets.xcassets in Resources */,
 			);
@@ -680,14 +709,17 @@
 				004DA2A228BDBD6100B1C08E /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				0044C7152898CB3E006D5B1F /* AppDelegate.swift in Sources */,
 				00F8300D28E29F8400545878 /* ELCourseLabel.swift in Sources */,
+				FB7BA0AF299097B20063FC44 /* MenuListNameCell.swift in Sources */,
 				00F8300F28E2A36A00545878 /* ELContentView.swift in Sources */,
 				000BD546289A1D0B00B9100E /* UIAlertController.swift in Sources */,
+				FB7BA0B4299104B30063FC44 /* ELCourseMenuModel.swift in Sources */,
 				000BD53A289A1D0B00B9100E /* Array.swift in Sources */,
 				000BD561289A229100B9100E /* ELNotificationKeyUtil.swift in Sources */,
 				0063F1AF28A9F8EE005874D8 /* Navigator+Home.swift in Sources */,
 				00C23A9128BDA16200755832 /* ELCourseSummaryTableViewCell.swift in Sources */,
 				000BD55C289A229100B9100E /* UIScrollView+RxSwift.swift in Sources */,
 				000BD545289A1D0B00B9100E /* UILabel.swift in Sources */,
+				FB7BA0B1299097D50063FC44 /* MenuDataListCell.swift in Sources */,
 				278321E428B4B2E000309F55 /* ELCourseInfoView.swift in Sources */,
 				0059CC7828A614B0008DC1F1 /* ELBasicViewController.swift in Sources */,
 				000BD53E289A1D0B00B9100E /* Dictionary.swift in Sources */,

@@ -11,7 +11,8 @@ import UIKit
 class ELRootTabbarController: UITabBarController, UITabBarControllerDelegate {
 
     let homePageViewController = ELHomePageViewController()
-    let courseViewController = ELCourseViewController()
+//    let courseViewController = ELCourseViewController()
+    var courseViewController = ELCourseViewController()
     let myViewController = ELMyViewController()
 
     deinit {
@@ -33,6 +34,7 @@ class ELRootTabbarController: UITabBarController, UITabBarControllerDelegate {
         
         // 代理方法
         self.delegate = self
+        courseViewController = UIStoryboard(name: "ELCourseViewController", bundle: nil).instantiateViewController(withIdentifier: "CourseViewController")  as! ELCourseViewController
         
         setupRootViewController()
     }
@@ -45,6 +47,8 @@ class ELRootTabbarController: UITabBarController, UITabBarControllerDelegate {
     /** 初始化tabbar */
     fileprivate func setupRootViewController() {
         setTabbarState(homePageViewController, HOME_TABBAR_NAME, "tabbar_chat_enabled", "tabbar_chat")
+        
+//        courseViewController.pushToPage(vc: <#T##UIViewController#>)
         setTabbarState(courseViewController, COURSE_TABBAR_NAME, "tabbar_contact_enabled", "tabbar_contact")
         setTabbarState(myViewController, MY_TABBAR_NAME, "tabbar_me_enabled", "tabbar_me")
 
@@ -67,6 +71,9 @@ class ELRootTabbarController: UITabBarController, UITabBarControllerDelegate {
     /** 每次点击tabBarItem后触发这个方法 */
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         print(viewController.title ?? "")
+        if viewController.title == "Course" {
+            
+        }
     }
     
     /** 监控浅色 or 暗黑模式变化 */

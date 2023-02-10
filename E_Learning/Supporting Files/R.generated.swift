@@ -89,10 +89,19 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
+    /// Storyboard `ELCourseViewController`.
+    static let elCourseViewController = _R.storyboard.elCourseViewController()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "ELCourseViewController", bundle: ...)`
+    static func elCourseViewController(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.elCourseViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -130,12 +139,38 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 14 images.
+  /// This `R.id` struct is generated, and contains static references to accessibility identifiers.
+  struct id {
+    struct elCourseViewController {
+      /// Accessibility identifier `TypeData`.
+      static let typeData: String = "TypeData"
+      /// Accessibility identifier `TypeName`.
+      static let typeName: String = "TypeName"
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.image` struct is generated, and contains static references to 20 images.
   struct image {
+    /// Image `AI`.
+    static let aI = Rswift.ImageResource(bundle: R.hostingBundle, name: "AI")
     /// Image `Bars／icon／starSpace`.
     static let barsIconStarSpace = Rswift.ImageResource(bundle: R.hostingBundle, name: "Bars／icon／starSpace")
     /// Image `Frame 1`.
     static let frame1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Frame 1")
+    /// Image `Go`.
+    static let go = Rswift.ImageResource(bundle: R.hostingBundle, name: "Go")
+    /// Image `Html 5`.
+    static let html5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "Html 5")
+    /// Image `Java`.
+    static let java = Rswift.ImageResource(bundle: R.hostingBundle, name: "Java")
+    /// Image `Python`.
+    static let python = Rswift.ImageResource(bundle: R.hostingBundle, name: "Python")
+    /// Image `Robot`.
+    static let robot = Rswift.ImageResource(bundle: R.hostingBundle, name: "Robot")
     /// Image `icon／arrowDown32`.
     static let iconArrowDown32 = Rswift.ImageResource(bundle: R.hostingBundle, name: "icon／arrowDown32")
     /// Image `icon／arrowLeft32`.
@@ -162,6 +197,13 @@ struct R: Rswift.Validatable {
     static let yellowStar = Rswift.ImageResource(bundle: R.hostingBundle, name: "yellowStar")
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "AI", bundle: ..., traitCollection: ...)`
+    static func aI(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.aI, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "Bars／icon／starSpace", bundle: ..., traitCollection: ...)`
     static func barsIconStarSpace(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.barsIconStarSpace, compatibleWith: traitCollection)
@@ -172,6 +214,41 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Frame 1", bundle: ..., traitCollection: ...)`
     static func frame1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.frame1, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Go", bundle: ..., traitCollection: ...)`
+    static func go(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.go, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Html 5", bundle: ..., traitCollection: ...)`
+    static func html5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.html5, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Java", bundle: ..., traitCollection: ...)`
+    static func java(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.java, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Python", bundle: ..., traitCollection: ...)`
+    static func python(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.python, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Robot", bundle: ..., traitCollection: ...)`
+    static func robot(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.robot, compatibleWith: traitCollection)
     }
     #endif
 
@@ -262,6 +339,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `TypeData`.
+    static let typeData: Rswift.ReuseIdentifier<MenuDataListCell> = Rswift.ReuseIdentifier(identifier: "TypeData")
+    /// Reuse identifier `TypeName`.
+    static let typeName: Rswift.ReuseIdentifier<MenuListNameCell> = Rswift.ReuseIdentifier(identifier: "TypeName")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -286,9 +373,38 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try elCourseViewController.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
     }
+
+    #if os(iOS) || os(tvOS)
+    struct elCourseViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = ELCourseViewController
+
+      let bundle = R.hostingBundle
+      let courseViewController = StoryboardViewControllerResource<ELCourseViewController>(identifier: "CourseViewController")
+      let name = "ELCourseViewController"
+
+      func courseViewController(_: Void = ()) -> ELCourseViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: courseViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "paperplane") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'paperplane' is used in storyboard 'ELCourseViewController', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "terminal.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'terminal.fill' is used in storyboard 'ELCourseViewController', but couldn't be loaded.") } }
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "tray.fill") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'tray.fill' is used in storyboard 'ELCourseViewController', but couldn't be loaded.") } }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "AccentColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'AccentColor' is used in storyboard 'ELCourseViewController', but couldn't be loaded.") }
+        }
+        if _R.storyboard.elCourseViewController().courseViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'courseViewController' could not be loaded from storyboard 'ELCourseViewController' as 'ELCourseViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {

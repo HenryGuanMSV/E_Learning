@@ -44,7 +44,7 @@ class ELCourseDetailViewController: ELBasicViewController {
     
     private let introView = ELIntroView().then() {
         $0.backgroundColor = .whiteColor
-        $0.addDefaultCorner()
+        $0  .addDefaultCorner()
         $0.addDefaultShadow()
     }
     
